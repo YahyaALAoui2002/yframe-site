@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Interactive Build — YFrame, Paris</title>
+<meta name="description" content="WebGL, scroll storytelling, and 3D-first sites. How YFrame builds interactive experiences that respond to every scroll and click.">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+.service-hero::before{background-image:url('https://images.unsplash.com/photo-1579546928937-641f7ac9bced?w=1920&q=85');}
+</style>
+</head>
+<body>
+
+<div id="scroll-progress"></div>
+
+<nav id="nav">
+  <div class="container">
+    <a href="../index.html" class="brand"><span class="brand-mark"><img src="../assets/logo-mark.png" alt="YFrame"></span>YFrame</a>
+    <div class="nav-links">
+      <a href="../index.html#services">Services</a>
+      <a href="../index.html#gallery">Work</a>
+      <a href="../index.html#why">About</a>
+      <a href="../index.html#testimonials">Reviews</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+    <div class="nav-right">
+      <a href="tel:+33755204078" class="nav-phone">+33 7 55 20 40 78</a>
+      <a href="../index.html#contact" class="btn-cta">Get Free Quote</a>
+    </div>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="mobile-overlay" id="mobileOverlay">
+  <a href="../index.html#services">Services</a>
+  <a href="../index.html#gallery">Work</a>
+  <a href="../index.html#why">About</a>
+  <a href="../index.html#testimonials">Reviews</a>
+  <a href="../index.html#contact">Contact</a>
+</div>
+
+<section class="service-hero">
+  <div class="container service-hero-inner">
+    <div class="breadcrumb"><a href="../index.html">Home</a> / <a href="../index.html#services">Services</a> / <span>Custom Interactive Build</span></div>
+    <div class="section-label">PACKAGE</div>
+    <h1>Sites That Respond to Every Scroll and Click</h1>
+    <p class="sub">For launches, portfolios, and brands that need to make a moment, not just a page. WebGL, scroll-triggered storytelling, and 3D-first builds that turn a website into something people actually remember.</p>
+    <div class="hero-ctas">
+      <a href="../index.html#contact" class="btn-primary">Start Your Project</a>
+      <a href="tel:+33755204078" class="btn-secondary">Call +33 7 55 20 40 78</a>
+    </div>
+  </div>
+</section>
+
+<section class="overview">
+  <div class="container overview-grid">
+    <div>
+      <div class="section-label">THE PACKAGE</div>
+      <h2>Not Every Site Needs This. Some Absolutely Do.</h2>
+      <p>A product launch, a portfolio, a festival, a fundraising campaign, these are moments where a standard site undersells what you're actually announcing. We build scroll-driven narratives, WebGL scenes, and custom cursor and interaction layers that make the site itself part of the pitch.</p>
+      <p>We're honest about when this is overkill. If your goal is a clean, fast, conversion-focused business site, we'll say so and point you to the <a href="business-website.html" style="color:var(--accent);font-weight:700;">Business Website</a> package instead. This is for the projects where the experience is the product.</p>
+    </div>
+    <div class="overview-stats">
+      <div class="ov-stat"><div class="n">4&ndash;6 wks</div><div class="l">Typical Timeline</div></div>
+      <div class="ov-stat"><div class="n">60fps</div><div class="l">Performance Target</div></div>
+      <div class="ov-stat"><div class="n">GSAP + WebGL</div><div class="l">Native, No Plugins</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="includes" class="dot-grid">
+  <div class="container">
+    <div class="includes-head">
+      <div class="section-label">WHAT'S INCLUDED</div>
+      <h2>Everything That Goes Into the Experience</h2>
+      <p>Motion with a purpose, tuned until it feels effortless.</p>
+    </div>
+    <div class="includes-grid">
+      <div class="include-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="service-icon"><i class="fa-solid fa-film"></i></div>
+        <h3>Scroll-Triggered Storytelling</h3>
+        <p>GSAP ScrollTrigger sequences that reveal content in step with how someone actually scrolls, not a fixed timer.</p>
+      </div>
+      <div class="include-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="service-icon"><i class="fa-solid fa-cube"></i></div>
+        <h3>WebGL / 3D Elements</h3>
+        <p>Three.js scenes and shader effects built and optimized specifically for the browser, not ported from a game engine.</p>
+      </div>
+      <div class="include-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="service-icon"><i class="fa-solid fa-arrow-pointer"></i></div>
+        <h3>Custom Cursor & Micro-interactions</h3>
+        <p>Small interaction details, hover states, cursor behavior, that most sites skip and most visitors notice.</p>
+      </div>
+      <div class="include-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="service-icon"><i class="fa-solid fa-volume-high"></i></div>
+        <h3>Sound Design (Optional)</h3>
+        <p>Subtle audio cues for interactions when the project calls for it, always with an obvious mute control.</p>
+      </div>
+      <div class="include-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="service-icon"><i class="fa-solid fa-gauge-high"></i></div>
+        <h3>Performance Budgeting</h3>
+        <p>We set a frame-rate and load-time budget before building, so the spectacle never comes at the cost of usability.</p>
+      </div>
+      <div class="include-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="service-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+        <h3>Graceful Mobile Fallbacks</h3>
+        <p>Heavy WebGL scenes get a lighter, still-polished fallback on mobile so nobody hits a broken experience.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="info-strip">
+  <div class="container info-grid">
+    <div class="info-item"><i class="fa-solid fa-clock"></i><div class="t">4&ndash;6 Weeks</div><div class="l">Build Timeline</div></div>
+    <div class="info-item"><i class="fa-solid fa-euro-sign"></i><div class="t">From &euro;1,999</div><div class="l">Typical Investment</div></div>
+    <div class="info-item"><i class="fa-solid fa-users"></i><div class="t">Direct Access</div><div class="l">To Your Build Team</div></div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="container">
+    <div class="how-head">
+      <div class="section-label">HOW THIS WORKS</div>
+      <h2>From Concept to Live Experience</h2>
+      <p>We prototype the feel before we commit to the build.</p>
+    </div>
+    <div class="process-row">
+      <div class="process-step" data-aos="fade-up" data-aos-delay="0">
+        <div class="step-num">01</div>
+        <div class="step-title">Concept & Storyboard</div>
+        <div class="step-desc">We storyboard the scroll journey scene by scene, like a short film, before touching code, so everyone agrees on the arc first.</div>
+      </div>
+      <div class="process-step" data-aos="fade-up" data-aos-delay="120">
+        <div class="step-num">02</div>
+        <div class="step-title">Prototype the Motion</div>
+        <div class="step-desc">A rough, functional build of the key interactions early, so you feel the experience before the visual polish is added.</div>
+      </div>
+      <div class="process-step" data-aos="fade-up" data-aos-delay="240">
+        <div class="step-num">03</div>
+        <div class="step-title">Build, Optimize & Launch</div>
+        <div class="step-desc">Full visual polish, performance tuning across devices, then launch with monitoring in place for the first week.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <div class="section-label">QUESTIONS</div>
+      <h2>Common Questions About Interactive Builds</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item open">
+        <div class="faq-q"><span>Will this slow my site down?</span><i class="fa-solid fa-plus"></i></div>
+        <div class="faq-a"><p>Not if it's budgeted correctly, which is why performance budgeting is part of the process, not an afterthought. We set a target load time and frame rate before building and test against it constantly.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Does it work well on mobile?</span><i class="fa-solid fa-plus"></i></div>
+        <div class="faq-a"><p>Yes, with a graceful fallback approach. Heavy 3D scenes get simplified or swapped for optimized alternatives on mobile so the experience stays smooth rather than choppy.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Do I need this, or would a standard site work?</span><i class="fa-solid fa-plus"></i></div>
+        <div class="faq-a"><p>Depends on the goal. Product launches, festivals, portfolios, and campaigns benefit from it. Ongoing business sites usually don't need the full treatment, and we'll tell you that honestly in the discovery call.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Can content be updated after launch if it changes often?</span><i class="fa-solid fa-plus"></i></div>
+        <div class="faq-a"><p>Interactive sequences are usually built for a specific narrative, so frequent content changes aren't the ideal fit. For sites needing regular updates, we typically pair this with a CMS-driven structure for the parts that change.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="related" class="dot-grid">
+  <div class="container">
+    <div class="related-head">
+      <div class="section-label">PAIRS WELL WITH</div>
+      <h2>Related Packages</h2>
+    </div>
+    <div class="related-grid">
+      <a href="business-website.html" class="related-card"><i class="fa-solid fa-globe"></i><h4>Business Website</h4><span>Learn more &rarr;</span></a>
+      <a href="ecommerce-website.html" class="related-card"><i class="fa-solid fa-cart-shopping"></i><h4>E-commerce Website</h4><span>Learn more &rarr;</span></a>
+      <a href="brand-identity.html" class="related-card"><i class="fa-solid fa-palette"></i><h4>Brand Identity</h4><span>Learn more &rarr;</span></a>
+      <a href="landing-page.html" class="related-card"><i class="fa-solid fa-bolt"></i><h4>Landing Page</h4><span>Learn more &rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="cta-ghost">MOTION</div>
+  <div class="container">
+    <div class="cta-content">
+      <div class="section-label" data-aos="fade-up">READY TO GET STARTED?</div>
+      <h2 data-aos="fade-up" data-aos-delay="80">Let's Build a Site People Actually Remember</h2>
+      <p class="sub" data-aos="fade-up" data-aos-delay="160">No pressure, no obligation. We'll show you what's possible before you sign anything.</p>
+      <a href="tel:+33755204078" class="cta-phone" data-aos="fade-up" data-aos-delay="240">+33 7 55 20 40 78</a>
+      <a href="../index.html#contact" class="btn-primary" data-aos="fade-up" data-aos-delay="320">Book Your Free Quote Today</a>
+      <div class="cta-reassure" data-aos="fade-up" data-aos-delay="400">Typically responds within 2 hours &middot; Serving clients worldwide from Paris since 2023</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><span class="brand-mark"><img src="../assets/logo-mark.png" alt="YFrame"></span>YFrame</div>
+        <p class="footer-tag">Independent web design studio in Paris. Custom-coded, interactive websites, no templates, no shortcuts.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-google"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Packages</h4>
+        <a href="landing-page.html">Landing Page</a>
+        <a href="business-website.html">Business Website</a>
+        <a href="ecommerce-website.html">E-commerce Website</a>
+        <a href="custom-interactive.html">Custom Interactive Build</a>
+        <a href="brand-identity.html">Brand Identity</a>
+        <a href="seo.html">SEO</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+33755204078"><i class="fa-solid fa-phone"></i> +33 7 55 20 40 78</a>
+        <a href="mailto:hello@yframe.studio"><i class="fa-solid fa-envelope"></i> hello@yframe.studio</a>
+        <p><i class="fa-solid fa-map-marker-alt"></i> Paris, France</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="../index.html">Home</a>
+        <a href="../index.html#why">About</a>
+        <a href="../index.html#services">Services</a>
+        <a href="../index.html#contact">Contact</a>
+        <a href="#">Privacy</a>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">&copy; 2026 YFrame. All rights reserved. &middot; Paris, France</div>
+  </div>
+</footer>
+
+<a href="tel:+33755204078" class="call-fab"><i class="fa-solid fa-phone"></i><span class="call-tooltip">Call Now</span></a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+<script src="../assets/main.js"></script>
+</body>
+</html>
