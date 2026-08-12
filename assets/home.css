@@ -1,0 +1,71 @@
+/* Home page — docs/04-content-map.md §1, build/05-wireframes.md §1 */
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;
+  min-height:100vh;
+  display:flex;align-items:center;justify-content:center;
+  text-align:center;
+  overflow:hidden;
+  padding:0 var(--gutter);
+}
+.hero-bg{
+  position:absolute;inset:0;z-index:-1;
+  background:radial-gradient(ellipse at 50% 30%, var(--bg-alt) 0%, var(--bg) 70%);
+}
+.hero-inner{max-width:900px;}
+.hero-headline{
+  font-size:clamp(40px,7vw,88px);
+  margin-bottom:24px;
+}
+.hero-sub{
+  font-size:clamp(16px,2vw,20px);
+  color:var(--text-dim);
+  max-width:46ch;
+  margin:0 auto;
+}
+
+/* ---------- Two-pillar entry ---------- */
+.pillars{padding-top:0;}
+.pillars-grid{
+  display:grid;
+  grid-template-columns:1.1fr 1fr;
+  gap:24px;
+  align-items:end;
+}
+.pillar-card{
+  position:relative;
+  display:flex;flex-direction:column;justify-content:flex-end;gap:16px;
+  padding:48px 40px;
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  transition:border-color 0.3s ease, transform 0.3s ease;
+  transform-style:preserve-3d;
+  will-change:transform;
+}
+.pillar-primary{background:var(--bg-alt);min-height:360px;}
+.pillar-secondary{min-height:300px;}
+.pillar-card:hover{border-color:var(--accent);}
+.pillar-label{font-family:var(--font-display);font-size:clamp(22px,2.4vw,30px);}
+.pillar-hook{color:var(--text-dim);font-size:15px;max-width:34ch;}
+.pillar-arrow{color:var(--accent);font-size:20px;}
+
+@media (max-width:900px){
+  .pillars-grid{grid-template-columns:1fr;}
+  .pillar-primary,.pillar-secondary{min-height:220px;}
+}
+
+/* ---------- Brand story teaser ---------- */
+.story-inner{max-width:60ch;margin:0 auto;text-align:center;}
+.story-inner p{font-size:18px;color:var(--text-dim);margin-bottom:20px;}
+.story-link{color:var(--accent);font-weight:600;font-size:14px;}
+
+/* ---------- Trust strip ---------- */
+.trust{padding-top:0;}
+.trust-inner{
+  display:flex;justify-content:center;gap:64px;text-align:center;
+}
+.trust-inner p{font-size:14px;color:var(--text-dim);}
+@media (max-width:600px){
+  .trust-inner{flex-direction:column;gap:16px;}
+}

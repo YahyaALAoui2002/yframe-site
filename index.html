@@ -3,431 +3,132 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>YFrame — Futuristic Web Design Studio, Paris</title>
-<meta name="description" content="YFrame is an independent web design studio in Paris. Custom-coded, interactive websites for brands worldwide, no templates, no page builders.">
+<title>Yframe — Cinematic Studio for Real Estate &amp; Hospitality</title>
+<meta name="description" content="Yframe is a premium studio for real estate and hospitality brands — cinematic property video and web design, one craft standard, direct access, no account managers.">
 <link rel="icon" type="image/png" href="assets/favicon.png">
-
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-<link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/home.css">
 </head>
 <body>
 
-<div id="scroll-progress"></div>
-
-<!-- NAV -->
 <nav id="nav">
   <div class="container">
-    <a href="#hero" class="brand"><span class="brand-mark"><img src="assets/logo-mark.png" alt="YFrame"></span>YFrame</a>
+    <a href="index.html" class="nav-brand"><img src="assets/logo-mark.png" alt="Yframe">Yframe</a>
     <div class="nav-links">
-      <a href="#services">Services</a>
-      <a href="#gallery">Work</a>
-      <a href="#why">About</a>
-      <a href="#testimonials">Reviews</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <div class="nav-right">
-      <a href="tel:+33755204078" class="nav-phone">+33 7 55 20 40 78</a>
-      <a href="#contact" class="btn-cta">Get Free Quote</a>
+      <a href="cinematic-video.html">Cinematic Video</a>
+      <a href="web-digital.html">Web &amp; Digital</a>
+      <a href="portfolio.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </div>
     <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
   </div>
 </nav>
+
 <div class="mobile-overlay" id="mobileOverlay">
-  <a href="#services">Services</a>
-  <a href="#gallery">Work</a>
-  <a href="#why">About</a>
-  <a href="#testimonials">Reviews</a>
-  <a href="#contact">Contact</a>
+  <button class="close-btn" aria-label="Close menu">&times;</button>
+  <a href="cinematic-video.html">Cinematic Video</a>
+  <a href="web-digital.html">Web &amp; Digital</a>
+  <a href="portfolio.html">Work</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
 </div>
 
-<!-- HERO -->
-<section id="hero">
-  <div id="particles"></div>
-  <div class="hero-inner container">
-    <div class="hero-grid">
-      <div class="hero-left">
-        <div class="section-label">FUTURISTIC WEB DESIGN STUDIO IN PARIS</div>
-        <h1 class="hero-headline" data-splitting>Websites That Feel Like The <span class="grad">Future</span></h1>
-        <p class="hero-sub">YFrame is an independent web design studio in Paris. Every site we build is designed and hand-coded from scratch, no templates, no page builders, for brands that want their website to actually feel different.</p>
-        <div class="hero-ctas">
-          <a href="#contact" class="btn-primary">Start Your Project</a>
-          <a href="tel:+33755204078" class="btn-secondary">Call +33 7 55 20 40 78</a>
-        </div>
-        <div class="hero-trust">★★★★★  4.9 Rating · 90+ Projects Launched · Clients in 20+ Countries</div>
-      </div>
-      <div class="hero-right">
-        <div class="hero-photo-wrap">
-          <div class="hero-cert-badge">★ 4.9 Google Rating</div>
-          <div class="hero-stats-card"><div class="num">90+</div><div class="lbl">Projects Delivered</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<main>
 
-<!-- MARQUEE -->
-<div class="marquee-wrap">
-  <div class="marquee-track" id="marqueeTrack">
-    <span>⭐ 4.9 Google Rating</span><span>✓ Based in Paris, France</span><span>🏆 20+ Countries Served</span><span>✓ 3+ Years in Business</span><span>⭐ 90+ Projects Launched</span><span>✓ #1 Rated Web Design Studio in Paris</span><span>✓ Fully Remote-Friendly</span>
-    <span>⭐ 4.9 Google Rating</span><span>✓ Based in Paris, France</span><span>🏆 20+ Countries Served</span><span>✓ 3+ Years in Business</span><span>⭐ 90+ Projects Launched</span><span>✓ #1 Rated Web Design Studio in Paris</span><span>✓ Fully Remote-Friendly</span>
-  </div>
-</div>
+  <!-- Hero — docs/04 §1. Background is a graded placeholder, not video: no
+       real case-study footage exists yet (docs/01 §10). Swap hero-bg for a
+       full-bleed <video> once a real asset is approved and in hand; the
+       scroll-driven "video dims, pillars emerge" morph from docs/03 §4.1 is
+       deliberately deferred until then — animating a fake video dimming
+       would spend motion budget on nothing, which docs/03 §4 explicitly
+       rules out. -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-inner">
+      <h1 class="hero-headline">Cinematic work for real estate &amp; hospitality.</h1>
+      <p class="hero-sub">One studio. Property video that sells the feeling, and websites built with the same craft standard.</p>
+    </div>
+  </section>
 
-<!-- TRUST BAR -->
-<section id="trust">
-  <div class="container trust-grid">
-    <div class="trust-item"><i class="fa-solid fa-diagram-project"></i><div class="trust-num" data-count="90">0</div><div class="trust-lbl">Projects Delivered</div></div>
-    <div class="trust-item"><i class="fa-solid fa-earth-europe"></i><div class="trust-num" data-count="20">0</div><div class="trust-lbl">Countries Served</div></div>
-    <div class="trust-item"><i class="fa-solid fa-calendar-check"></i><div class="trust-num" data-count="3">0</div><div class="trust-lbl">Years in Business</div></div>
-    <div class="trust-item"><i class="fa-solid fa-arrow-trend-up"></i><div class="trust-num" data-count="40">0</div><div class="trust-lbl">Avg. Engagement Lift %</div></div>
-    <div class="trust-item"><i class="fa-solid fa-star"></i><div class="trust-num">4.9 ★</div><div class="trust-lbl">Google Rating</div></div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services" class="dot-grid">
-  <div class="container">
-    <div class="services-head">
-      <div class="section-label">WHAT WE DO</div>
-      <h2>Design and Development, Built to Feel Alive</h2>
-      <p>Every price below is one number for the whole job, design and development together, not two separate invoices. No templates, no hidden hours.</p>
-    </div>
-    <div class="services-grid">
-      <div class="service-card featured" data-aos="fade-up" data-aos-delay="0">
-        <span class="service-badge">POPULAR</span>
-        <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
-        <h3>Business Website</h3>
-        <div class="card-price"><span class="amount">From &euro;1,299</span><span class="period">&middot; 2 weeks</span></div>
-        <p>A complete site, designed and built end to end: home, services, about, contact. The package most businesses actually need.</p>
-        <a href="services/business-website.html" class="service-link">Learn More →</a>
-      </div>
-      <div class="service-card" data-aos="fade-up" data-aos-delay="80">
-        <div class="service-icon"><i class="fa-solid fa-bolt"></i></div>
-        <h3>Landing Page</h3>
-        <div class="card-price"><span class="amount">From &euro;999</span><span class="period">&middot; 1 week</span></div>
-        <p>One page, one goal. The fastest way to get a real, custom-built site live for a launch or a lean first version.</p>
-        <a href="services/landing-page.html" class="service-link">Learn More →</a>
-      </div>
-      <div class="service-card" data-aos="fade-up" data-aos-delay="160">
-        <div class="service-icon"><i class="fa-solid fa-cart-shopping"></i></div>
-        <h3>E-commerce Website</h3>
-        <div class="card-price"><span class="amount">From &euro;1,499</span><span class="period">&middot; 3&ndash;4 weeks</span></div>
-        <p>A storefront built to convert: product pages, checkout, and platform integration included.</p>
-        <a href="services/ecommerce-website.html" class="service-link">Learn More →</a>
-      </div>
-      <div class="service-card" data-aos="fade-up" data-aos-delay="240">
-        <div class="service-icon"><i class="fa-solid fa-cube"></i></div>
-        <h3>Custom Interactive Build</h3>
-        <div class="card-price"><span class="amount">From &euro;1,999</span><span class="period">&middot; 4&ndash;6 weeks</span></div>
-        <p>WebGL, scroll storytelling, and 3D-first builds for launches and moments that need to be remembered.</p>
-        <a href="services/custom-interactive.html" class="service-link">Learn More →</a>
-      </div>
-      <div class="service-card" data-aos="fade-up" data-aos-delay="320">
-        <div class="service-icon"><i class="fa-solid fa-palette"></i></div>
-        <h3>Brand Identity</h3>
-        <div class="card-price"><span class="amount">From &euro;799</span><span class="period">&middot; add-on</span></div>
-        <p>Logo, color, type, and voice, built as a standalone system or bundled with any website package.</p>
-        <a href="services/brand-identity.html" class="service-link">Learn More →</a>
-      </div>
-      <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-        <div class="service-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
-        <h3>SEO</h3>
-        <div class="card-price"><span class="amount">&euro;499</span><span class="period">or &euro;249/mo</span></div>
-        <p>Technical audit, keyword research, and local search optimization, so the site we build actually gets found.</p>
-        <a href="services/seo.html" class="service-link">Learn More →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- HOW WE WORK -->
-<section id="how">
-  <div class="container">
-    <div class="how-head">
-      <div class="section-label">HOW WE WORK</div>
-      <h2>Three Steps From Idea to Launch</h2>
-      <p>No bloated process. No account managers. You work directly with the people building your site.</p>
-    </div>
-    <div class="process-row">
-      <div class="process-step" data-aos="fade-up" data-aos-delay="0">
-        <div class="step-num">01</div>
-        <div class="step-title">Discover</div>
-        <div class="step-desc">A deep-dive call to understand your brand, your audience, and what "futuristic" should actually mean for your business.</div>
-      </div>
-      <div class="process-step" data-aos="fade-up" data-aos-delay="120">
-        <div class="step-num">02</div>
-        <div class="step-title">Design & Prototype</div>
-        <div class="step-desc">We build a real interactive prototype, not static mockups, so you feel the site before a single line of production code is written.</div>
-      </div>
-      <div class="process-step" data-aos="fade-up" data-aos-delay="240">
-        <div class="step-num">03</div>
-        <div class="step-title">Build & Launch</div>
-        <div class="step-desc">Pixel-perfect development, cross-browser QA, launch, and two weeks of post-launch support included.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- GALLERY -->
-<section id="gallery" class="dot-grid">
-  <div class="container">
-    <div class="gallery-head">
-      <div class="section-label">OUR WORK</div>
-      <h2>Selected Projects</h2>
-      <p>A few of the sites we've shipped for clients across three continents.</p>
-    </div>
-    <div class="gallery-grid">
-      <div class="g-item g-1" data-aos="fade-up" data-aos-delay="0">
-        <img src="https://images.unsplash.com/photo-1603201667106-0e3e0ae584c5?w=1200&q=85" alt="SaaS dashboard redesign">
-        <div class="g-caption"><div class="g-cat">SAAS PLATFORM</div><div class="g-cap">Dashboard redesign for a Stockholm fintech startup</div></div>
-      </div>
-      <div class="g-item g-2" data-aos="fade-up" data-aos-delay="100">
-        <img src="https://images.unsplash.com/photo-1526560244950-1a3c1ace48f9?w=900&q=85" alt="E-commerce storefront design">
-        <div class="g-caption"><div class="g-cat">E-COMMERCE</div><div class="g-cap">Immersive storefront, Singapore fashion label</div></div>
-      </div>
-      <a class="g-item g-3" href="portfolio/aurelia/index.html" target="_blank" rel="noopener" data-aos="fade-up" data-aos-delay="200">
-        <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=85" alt="Interactive 3D architecture site for AURELIA">
-        <div class="g-caption"><div class="g-cat">INTERACTIVE 3D</div><div class="g-cap">AURELIA — architecture &amp; landscape studio, live demo</div></div>
+  <!-- Two-pillar entry — docs/04 §1, docs/03 §4.2 (restrained tilt-on-hover only) -->
+  <section class="pillars" id="pillars">
+    <div class="container pillars-grid">
+      <a href="cinematic-video.html" class="pillar-card pillar-primary">
+        <span class="pillar-label">Cinematic Property Video</span>
+        <span class="pillar-hook">Turn a listing into a film.</span>
+        <span class="pillar-arrow">&rarr;</span>
       </a>
-      <div class="g-item g-4" data-aos="fade-up" data-aos-delay="300">
-        <img src="https://images.unsplash.com/photo-1573164574230-db1d5e960238?w=1200&q=85" alt="Creative agency team at work">
-        <div class="g-caption"><div class="g-cat">BRAND + WEB</div><div class="g-cap">Identity and site for a Mexico City real estate group</div></div>
-      </div>
+      <a href="web-digital.html" class="pillar-card pillar-secondary">
+        <span class="pillar-label">Web &amp; Digital Presence</span>
+        <span class="pillar-hook">Already on Airbnb? Here's what a dedicated site adds.</span>
+        <span class="pillar-arrow">&rarr;</span>
+      </a>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- WHY CHOOSE US -->
-<section id="why" class="dot-grid">
-  <div class="container why-grid">
-    <div class="why-photo-wrap" data-aos="fade-right">
-      <div class="why-photo"></div>
-      <div class="google-badge"><div class="g-num">4.9 ★</div><div class="g-lbl">GOOGLE</div></div>
+  <!-- Brand story teaser — docs/04 §1. Static, no scroll motion (docs/03 §4.5:
+       motion budget is reserved for hero/pillars/portfolio/type-reveal only). -->
+  <section class="story">
+    <div class="container story-inner">
+      <p>Yframe exists because real estate and hospitality brands keep getting handed generic templates and stock photography for the most valuable asset they have. We build for one vertical, not every vertical — and it shows.</p>
+      <a href="about.html" class="story-link">Read more &rarr;</a>
     </div>
-    <div class="why-content">
-      <div class="section-label">WHY CHOOSE US</div>
-      <h2 data-aos="fade-left">3 Years. Zero Templates. Every Site Custom-Built.</h2>
-      <div class="why-stat" data-aos="fade-left" data-aos-delay="100">Rated 4.9 by clients in 20+ countries.</div>
-      <ul class="why-list">
-        <li data-aos="fade-left" data-aos-delay="100"><span class="why-check"><i class="fa-solid fa-check"></i></span><span>Every site custom-coded, zero page-builder templates</span></li>
-        <li data-aos="fade-left" data-aos-delay="200"><span class="why-check"><i class="fa-solid fa-check"></i></span><span>Award-worthy motion design, native GSAP and WebGL</span></li>
-        <li data-aos="fade-left" data-aos-delay="300"><span class="why-check"><i class="fa-solid fa-check"></i></span><span>Fully remote-friendly workflow across every timezone</span></li>
-        <li data-aos="fade-left" data-aos-delay="400"><span class="why-check"><i class="fa-solid fa-check"></i></span><span>Average 40% increase in time-on-site after launch</span></li>
-        <li data-aos="fade-left" data-aos-delay="500"><span class="why-check"><i class="fa-solid fa-check"></i></span><span>Direct access to your designer and developer, no middlemen</span></li>
-        <li data-aos="fade-left" data-aos-delay="600"><span class="why-check"><i class="fa-solid fa-check"></i></span><span>Fixed-scope pricing, no surprise invoices</span></li>
-      </ul>
-      <a href="#contact" class="btn-primary">Get Started Today</a>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- TESTIMONIALS -->
-<section id="testimonials" class="dot-grid">
-  <div class="container">
-    <div class="test-head">
-      <div class="section-label">WHAT CLIENTS SAY</div>
-      <h2>Trusted Across Three Continents</h2>
-      <p>Real feedback from founders and brand teams we've built for.</p>
+  <!-- Trust strip — docs/04 §1. Text-led, no icons, no claimed stats
+       (brief §4: credibility through the site itself, not claimed numbers —
+       deliberately does not reuse the old site's "4.9 rating / 90+ projects"
+       pattern). -->
+  <section class="trust">
+    <div class="container trust-inner">
+      <p>Direct access, no account managers.</p>
+      <p>Vertical specialist, not a generalist agency.</p>
     </div>
-    <div class="swiper testimonials-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="test-card">
-            <div class="test-stars">★★★★★</div>
-            <div class="test-quote">"YFrame rebuilt our SaaS dashboard from a spreadsheet-looking mess into something our sales team is actually proud to demo. The prototype felt like a real product before a line of code shipped."</div>
-            <div class="test-sep"></div>
-            <div class="test-name">Marcus Ohlsson</div>
-            <div class="test-badge"><i class="fa-brands fa-google"></i>via Google Reviews</div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="test-card">
-            <div class="test-stars">★★★★★</div>
-            <div class="test-quote">"Our new storefront lifted conversion by 34% in the first month. YFrame understood our brand faster than agencies twice their size, and the whole build ran on Singapore time without a single missed call."</div>
-            <div class="test-sep"></div>
-            <div class="test-name">Amara Chen</div>
-            <div class="test-badge"><i class="fa-brands fa-google"></i>via Google Reviews</div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="test-card">
-            <div class="test-stars">★★★★★</div>
-            <div class="test-quote">"We needed a brand and a site that felt as premium as the properties we sell. YFrame delivered both in six weeks, and clients now mention the website unprompted during walkthroughs."</div>
-            <div class="test-sep"></div>
-            <div class="test-name">Diego Fernández</div>
-            <div class="test-badge"><i class="fa-brands fa-google"></i>via Google Reviews</div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="test-card">
-            <div class="test-stars">★★★★★</div>
-            <div class="test-quote">"No account managers, no jargon, just direct Slack access to the person actually building the site. They hit every deadline and the animations still get compliments from clients."</div>
-            <div class="test-sep"></div>
-            <div class="test-name">Sarah Whitfield</div>
-            <div class="test-badge"><i class="fa-brands fa-google"></i>via Google Reviews</div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="test-card">
-            <div class="test-stars">★★★★★</div>
-            <div class="test-quote">"Being based in Paris too, I could meet the team in person, but honestly the async process was so smooth it didn't matter. Launched our fashion site in four weeks flat and it looks nothing like our competitors."</div>
-            <div class="test-sep"></div>
-            <div class="test-name">Camille Dubois</div>
-            <div class="test-badge"><i class="fa-brands fa-google"></i>via Google Reviews</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- CTA -->
-<section id="cta">
-  <div class="cta-ghost">DESIGN</div>
-  <div class="container">
-    <div class="cta-content">
-      <div class="section-label" data-aos="fade-up">READY TO GET STARTED?</div>
-      <h2 data-aos="fade-up" data-aos-delay="80">Let's Build a Website Your Competitors Can't Copy</h2>
-      <p class="sub" data-aos="fade-up" data-aos-delay="160">No pressure, no obligation. We'll show you what's possible before you sign anything.</p>
-      <a href="tel:+33755204078" class="cta-phone" data-aos="fade-up" data-aos-delay="240">+33 7 55 20 40 78</a>
-      <a href="#contact" class="btn-primary" data-aos="fade-up" data-aos-delay="320">Book Your Free Quote Today</a>
-      <div class="cta-reassure" data-aos="fade-up" data-aos-delay="400">Typically responds within 2 hours · Serving clients worldwide from Paris since 2023</div>
-    </div>
-  </div>
-</section>
+</main>
 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="container">
-    <h2>Get In Touch</h2>
-    <div class="contact-grid">
-      <div class="contact-info">
-        <h3>Ready to talk?</h3>
-        <p>Based in Paris, working with brands across Europe, North America, and Asia.</p>
-        <div class="contact-row"><i class="fa-solid fa-phone"></i><a href="tel:+33755204078">+33 7 55 20 40 78</a></div>
-        <div class="contact-row"><i class="fa-solid fa-envelope"></i><a href="mailto:hello@yframe.studio">hello@yframe.studio</a></div>
-        <div class="contact-row"><i class="fa-solid fa-clock"></i>Mon–Fri: 9:00–19:00 CET · Remote consultations worldwide</div>
-        <ul class="contact-areas">
-          <li>Also collaborating regularly with teams in:</li>
-          <li>London · New York · Singapore · Dubai</li>
-        </ul>
-      </div>
-      <form id="contactForm">
-        <div class="form-group"><label>Full Name</label><input type="text" required placeholder="Your name"></div>
-        <div class="form-group"><label>Phone Number</label><input type="tel" required placeholder="+33 ..."></div>
-        <div class="form-group">
-          <label>Service Needed</label>
-          <select required>
-            <option value="">Select a service</option>
-            <option>Landing Page</option>
-            <option>Business Website</option>
-            <option>E-commerce Website</option>
-            <option>Custom Interactive Build</option>
-            <option>Brand Identity</option>
-            <option>SEO</option>
-            <option>Not Sure Yet</option>
-          </select>
-        </div>
-        <div class="form-group"><label>Anything else we should know? (optional)</label><textarea rows="4" placeholder="Tell us about your project"></textarea></div>
-        <button type="submit" class="btn-submit">Send My Request →</button>
-      </form>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
 <footer>
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="footer-brand"><span class="brand-mark"><img src="assets/logo-mark.png" alt="YFrame"></span>YFrame</div>
-        <p class="footer-tag">Independent web design studio in Paris. Custom-coded, interactive websites, no templates, no shortcuts.</p>
-        <div class="footer-social">
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="#"><i class="fa-brands fa-google"></i></a>
-        </div>
+        <div class="footer-brand"><img src="assets/logo-mark.png" alt="Yframe">Yframe</div>
+        <p class="footer-tagline">Premium studio for real estate &amp; hospitality — cinematic video and web, one craft standard.</p>
       </div>
       <div class="footer-col">
-        <h4>Packages</h4>
-        <a href="services/landing-page.html">Landing Page</a>
-        <a href="services/business-website.html">Business Website</a>
-        <a href="services/ecommerce-website.html">E-commerce Website</a>
-        <a href="services/custom-interactive.html">Custom Interactive Build</a>
-        <a href="services/brand-identity.html">Brand Identity</a>
-        <a href="services/seo.html">SEO</a>
+        <h4>Services</h4>
+        <a href="cinematic-video.html">Cinematic Video</a>
+        <a href="web-digital.html#tier-landing">Landing Page</a>
+        <a href="web-digital.html#tier-business">Business Website</a>
+        <a href="web-digital.html#tier-ecommerce">E-commerce Website</a>
+        <a href="web-digital.html#tier-custom">Custom Interactive Build</a>
+        <a href="web-digital.html#tier-brand">Brand Identity</a>
+        <a href="web-digital.html#tier-seo">SEO</a>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
-        <a href="tel:+33755204078"><i class="fa-solid fa-phone"></i> +33 7 55 20 40 78</a>
-        <a href="mailto:hello@yframe.studio"><i class="fa-solid fa-envelope"></i> hello@yframe.studio</a>
-        <p><i class="fa-solid fa-map-marker-alt"></i> Paris, France</p>
+        <a href="tel:+33755204078">+33 7 55 20 40 78</a>
+        <a href="mailto:hello@yframe.studio">hello@yframe.studio</a>
+        <p>Paris, France</p>
       </div>
       <div class="footer-col">
-        <h4>Quick Links</h4>
-        <a href="#hero">Home</a>
-        <a href="#why">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-        <a href="#">Privacy</a>
+        <h4>Social</h4>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Google</a>
       </div>
     </div>
-    <div class="footer-divider"></div>
-    <div class="footer-bottom">© 2026 YFrame. All rights reserved. · Paris, France</div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Yframe. All rights reserved.</span>
+      <span>Paris, France</span>
+    </div>
   </div>
 </footer>
 
-<a href="tel:+33755204078" class="call-fab"><i class="fa-solid fa-phone"></i><span class="call-tooltip">Call Now</span></a>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="assets/main.js"></script>
-<script>
-// Hero headline stagger (page-specific: index hero only)
-Splitting();
-gsap.from('.hero-headline .word', { y: 40, opacity: 0, duration: 0.8, stagger: 0.08, ease: 'power3.out' });
-gsap.from('.hero-sub', { y: 20, opacity: 0, duration: 0.8, delay: 0.3, ease: 'power3.out' });
-gsap.from('.hero-ctas', { y: 20, opacity: 0, duration: 0.8, delay: 0.45, ease: 'power3.out' });
-gsap.from('.hero-photo-wrap', { x: 60, opacity: 0, duration: 0.9, delay: 0.4, ease: 'power3.out' });
-gsap.from('.hero-cert-badge', { opacity: 0, y: -10, duration: 0.6, delay: 1.2 });
-gsap.from('.hero-stats-card', { opacity: 0, y: 10, duration: 0.6, delay: 1.5 });
-
-// Trust bar counters (index page only)
-const counters = document.querySelectorAll('.trust-num[data-count]');
-const counterObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      const el = entry.target;
-      const target = parseInt(el.getAttribute('data-count'));
-      gsap.to(el, {
-        innerHTML: target, duration: 2, ease: 'expo.out', snap: { innerHTML: 1 },
-        onUpdate: () => { el.textContent = Math.round(gsap.getProperty(el, 'innerHTML')); }
-      });
-      counterObserver.unobserve(el);
-    }
-  });
-}, { threshold: 0.5 });
-counters.forEach(c => counterObserver.observe(c));
-
-// Testimonials carousel (index page only)
-new Swiper('.testimonials-swiper', {
-  loop: true, spaceBetween: 24, grabCursor: true, centeredSlides: true,
-  autoplay: { delay: 3500, disableOnInteraction: false, pauseOnMouseEnter: true },
-  breakpoints: {
-    0:    { slidesPerView: 1.15, centeredSlides: true },
-    768:  { slidesPerView: 2.2,  centeredSlides: false },
-    1024: { slidesPerView: 3,    centeredSlides: false }
-  }
-});
-</script>
+<script src="assets/home.js"></script>
 </body>
 </html>
