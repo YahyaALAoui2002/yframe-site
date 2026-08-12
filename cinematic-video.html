@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cinematic Property Video — Yframe</title>
+<meta name="description" content="Cinematic property video for real estate and hospitality — one shoot, a hero video plus social cuts, from €1,500.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/cinematic-video.css">
+</head>
+<body>
+
+<nav id="nav">
+  <div class="container">
+    <a href="index.html" class="nav-brand"><img src="assets/logo-mark.png" alt="Yframe">Yframe</a>
+    <div class="nav-links">
+      <a href="cinematic-video.html" class="active">Cinematic Video</a>
+      <a href="web-digital.html">Web &amp; Digital</a>
+      <a href="portfolio.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<div class="mobile-overlay" id="mobileOverlay">
+  <button class="close-btn" aria-label="Close menu">&times;</button>
+  <a href="cinematic-video.html">Cinematic Video</a>
+  <a href="web-digital.html">Web &amp; Digital</a>
+  <a href="portfolio.html">Work</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<main>
+
+  <!-- Hero — docs/04 §2, build/05 §2: shorter than Home's, reel inline
+       below the headline rather than full-bleed background, so it reads
+       as "the reel" not ambient texture. No reel exists yet (docs/01 §10)
+       - placeholder box, not a full case-study treatment (that's below). -->
+  <section class="video-hero">
+    <div class="container video-hero-inner">
+      <h1>Property video that sells the feeling.</h1>
+      <p class="lead">One shoot. A cinematic hero video plus social cuts, ready to publish.</p>
+      <div class="reel-placeholder" aria-hidden="true">
+        <span>Reel in production</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process — docs/04 §2. Static, no scroll motion (docs/03 §4.5: process
+       steps get CSS-transition-only at most). -->
+  <section class="process">
+    <div class="container">
+      <div class="process-grid">
+        <div class="process-step">
+          <span class="step-num">01</span>
+          <p>We scope the shoot around what actually sells the property.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-num">02</span>
+          <p>Cinematic capture and edit — color, pacing, sound design.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-num">03</span>
+          <p>You get a hero video plus cuts sized for social, ready in days, not weeks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing — docs/04 §2 / brief §8b, figures unchanged and verbatim. -->
+  <section class="pricing" id="pricing">
+    <div class="container pricing-grid">
+      <div class="price-card price-primary">
+        <span class="price-label">Video</span>
+        <span class="price-amount">&euro;1,500</span>
+        <p class="price-desc">The default: one cinematic hero video + social cuts, from a single shoot.</p>
+        <a href="contact.html?service=video" class="btn-primary">Start your project</a>
+      </div>
+      <div class="price-card price-secondary">
+        <span class="price-label">The Studio Launch Package</span>
+        <span class="price-amount">&euro;2,500</span>
+        <p class="price-desc">Business Website + one property video, ~11% off buying separately. Already convinced you need both? Bundle and save.</p>
+        <a href="contact.html?service=studio-launch" class="btn-secondary">Bundle and save</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case studies — docs/04 §2/§0. No case study at launch. Full-width
+       feature layout (not a grid, per build/05 §2) - same layout a real
+       entry will use later, text in place of video for now. -->
+  <section class="case-study">
+    <div class="container">
+      <div class="case-study-feature">
+        <span class="case-label">Case study</span>
+        <h2>Our first cinematic case study is in production.</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA band — reused component (build/05 cross-page notes), pre-set to Video -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>Tell us about the property.</h2>
+      <a href="contact.html?service=video" class="btn-primary">Start your project</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="assets/logo-mark.png" alt="Yframe">Yframe</div>
+        <p class="footer-tagline">Premium studio for real estate &amp; hospitality — cinematic video and web, one craft standard.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="cinematic-video.html">Cinematic Video</a>
+        <a href="web-digital.html#tier-landing">Landing Page</a>
+        <a href="web-digital.html#tier-business">Business Website</a>
+        <a href="web-digital.html#tier-ecommerce">E-commerce Website</a>
+        <a href="web-digital.html#tier-custom">Custom Interactive Build</a>
+        <a href="web-digital.html#tier-brand">Brand Identity</a>
+        <a href="web-digital.html#tier-seo">SEO</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+33755204078">+33 7 55 20 40 78</a>
+        <a href="mailto:hello@yframe.studio">hello@yframe.studio</a>
+        <p>Paris, France</p>
+      </div>
+      <div class="footer-col">
+        <h4>Social</h4>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Google</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Yframe. All rights reserved.</span>
+      <span>Paris, France</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>
