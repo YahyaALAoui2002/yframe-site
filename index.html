@@ -36,15 +36,19 @@
 
 <main>
 
-  <!-- Hero — docs/04 §1. Background is a graded placeholder, not video: no
-       real case-study footage exists yet (docs/01 §10). Swap hero-bg for a
-       full-bleed <video> once a real asset is approved and in hand; the
-       scroll-driven "video dims, pillars emerge" morph from docs/03 §4.1 is
-       deliberately deferred until then — animating a fake video dimming
-       would spend motion budget on nothing, which docs/03 §4 explicitly
-       rules out. -->
+  <!-- Hero — docs/04 §1. Background is a Higgsfield-generated generic,
+       brand-safe loop (approved by Yahya 2026-08-19) - not stock, not tied
+       to a specific real property (docs/01 §10 - real case-study footage
+       doesn't exist yet). Swap for real Yframe-produced footage once
+       available. The scroll-driven "video dims, pillars emerge" morph from
+       docs/03 §4.1 is still deferred - this step only lands the asset
+       itself, not the scroll interaction built on top of it. -->
   <section class="hero" id="hero">
     <div class="hero-bg"></div>
+    <video class="hero-video" autoplay muted loop playsinline preload="auto">
+      <source src="assets/video/hero-loop.mp4" type="video/mp4">
+    </video>
+    <div class="hero-scrim"></div>
     <div class="container hero-inner">
       <h1 class="hero-headline">Cinematic work for real estate &amp; hospitality.</h1>
       <p class="hero-sub">One studio. Property video that sells the feeling, and websites built with the same craft standard.</p>

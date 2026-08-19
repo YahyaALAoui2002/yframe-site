@@ -38,14 +38,19 @@
 
   <!-- Hero — docs/04 §2, build/05 §2: shorter than Home's, reel inline
        below the headline rather than full-bleed background, so it reads
-       as "the reel" not ambient texture. No reel exists yet (docs/01 §10)
-       - placeholder box, not a full case-study treatment (that's below). -->
+       as "the reel" not ambient texture. No real case-study reel exists
+       yet (docs/01 §10) - same Higgsfield-generated generic loop used on
+       Home (approved 2026-08-19), labeled honestly as in-production, not
+       presented as a delivered client reel. -->
   <section class="video-hero">
     <div class="container video-hero-inner">
       <h1>Property video that sells the feeling.</h1>
       <p class="lead">One shoot. A cinematic hero video plus social cuts, ready to publish.</p>
-      <div class="reel-placeholder" aria-hidden="true">
-        <span>Reel in production</span>
+      <div class="reel-placeholder">
+        <video autoplay muted loop playsinline preload="auto">
+          <source src="assets/video/hero-loop.mp4" type="video/mp4">
+        </video>
+        <span class="reel-tag">Reel in production</span>
       </div>
     </div>
   </section>

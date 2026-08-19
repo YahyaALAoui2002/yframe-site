@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work — Yframe</title>
+<meta name="description" content="Yframe's cinematic video and web work for real estate and hospitality brands.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/portfolio.css">
+</head>
+<body>
+
+<nav id="nav">
+  <div class="container">
+    <a href="index.html" class="nav-brand"><img src="assets/logo-mark.png" alt="Yframe">Yframe</a>
+    <div class="nav-links">
+      <a href="cinematic-video.html">Cinematic Video</a>
+      <a href="web-digital.html">Web &amp; Digital</a>
+      <a href="portfolio.html" class="active">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<div class="mobile-overlay" id="mobileOverlay">
+  <button class="close-btn" aria-label="Close menu">&times;</button>
+  <a href="cinematic-video.html">Cinematic Video</a>
+  <a href="web-digital.html">Web &amp; Digital</a>
+  <a href="portfolio.html">Work</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<main>
+
+  <section class="work-header">
+    <div class="container">
+      <h1>Work</h1>
+    </div>
+  </section>
+
+  <!-- Filter — docs/04 §4, build/05 §4: two toggle states, sticky under nav.
+       Both filters launch empty (docs/04 §0) - no fabricated entries. -->
+  <section class="work-filter-section">
+    <div class="filter-bar" id="filterBar">
+      <div class="container filter-bar-inner">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="video">Video</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="work-grid" id="workGrid">
+        <div class="work-empty">
+          <p>More work landing soon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="assets/logo-mark.png" alt="Yframe">Yframe</div>
+        <p class="footer-tagline">Premium studio for real estate &amp; hospitality — cinematic video and web, one craft standard.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="cinematic-video.html">Cinematic Video</a>
+        <a href="web-digital.html#tier-landing">Landing Page</a>
+        <a href="web-digital.html#tier-business">Business Website</a>
+        <a href="web-digital.html#tier-ecommerce">E-commerce Website</a>
+        <a href="web-digital.html#tier-custom">Custom Interactive Build</a>
+        <a href="web-digital.html#tier-brand">Brand Identity</a>
+        <a href="web-digital.html#tier-seo">SEO</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+33755204078">+33 7 55 20 40 78</a>
+        <a href="mailto:hello@yframe.studio">hello@yframe.studio</a>
+        <p>Paris, France</p>
+      </div>
+      <div class="footer-col">
+        <h4>Social</h4>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Google</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Yframe. All rights reserved.</span>
+      <span>Paris, France</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/main.js"></script>
+<script src="assets/portfolio.js"></script>
+</body>
+</html>

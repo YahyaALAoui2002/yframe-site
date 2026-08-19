@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Yframe</title>
+<meta name="description" content="Tell Yframe what you're building — cinematic property video or a website, one form for both.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/contact.css">
+</head>
+<body>
+
+<nav id="nav">
+  <div class="container">
+    <a href="index.html" class="nav-brand"><img src="assets/logo-mark.png" alt="Yframe">Yframe</a>
+    <div class="nav-links">
+      <a href="cinematic-video.html">Cinematic Video</a>
+      <a href="web-digital.html">Web &amp; Digital</a>
+      <a href="portfolio.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<div class="mobile-overlay" id="mobileOverlay">
+  <button class="close-btn" aria-label="Close menu">&times;</button>
+  <a href="cinematic-video.html">Cinematic Video</a>
+  <a href="web-digital.html">Web &amp; Digital</a>
+  <a href="portfolio.html">Work</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<main>
+
+  <section class="contact-header">
+    <div class="container">
+      <h1>Tell us what you're building.</h1>
+    </div>
+  </section>
+
+  <!-- Form + details — docs/04 §6, build/05 §6. 2-col desktop (form left,
+       details right), stacked mobile (form first). Service-type dropdown
+       covers video + all 6 web tiers (fix for the old site's web-only
+       dropdown, brief §5). No fake urgency copy (brief §4).
+
+       NOTE: GitHub Pages serves static files only - there is no backend to
+       receive a POST. This form submits via a mailto: link built in JS
+       (assets/contact.js), which opens the visitor's email client with the
+       fields pre-filled. That's a stopgap, not a final decision: a real
+       form backend (Formspree, Netlify Forms, or a small serverless
+       endpoint) should be chosen before launch so submissions don't depend
+       on the visitor's local mail client. Flagged in run.json - not decided
+       silently. -->
+  <section class="contact-main">
+    <div class="container contact-grid">
+      <form id="contactForm" class="contact-form">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          <span>Phone <span class="optional">(optional)</span></span>
+          <input type="tel" name="phone">
+        </label>
+        <label>
+          <span>What are you building?</span>
+          <select name="service" id="serviceSelect" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="video">Cinematic Property Video &mdash; &euro;1,500</option>
+            <option value="studio-launch">Studio Launch Package &mdash; &euro;2,500</option>
+            <option value="landing">Landing Page &mdash; &euro;999</option>
+            <option value="business">Business Website &mdash; &euro;1,299</option>
+            <option value="ecommerce">E-commerce Website &mdash; &euro;1,499</option>
+            <option value="custom">Custom Interactive Build &mdash; &euro;1,999</option>
+            <option value="brand">Brand Identity &mdash; &euro;799</option>
+            <option value="seo">SEO &mdash; &euro;499 / &euro;249 per month</option>
+            <option value="web">Web &amp; Digital &mdash; not sure yet</option>
+          </select>
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="btn-primary">Send message</button>
+      </form>
+
+      <div class="contact-details">
+        <div>
+          <h4>Direct</h4>
+          <a href="tel:+33755204078">+33 7 55 20 40 78</a>
+          <a href="mailto:hello@yframe.studio">hello@yframe.studio</a>
+        </div>
+        <div>
+          <h4>Studio</h4>
+          <p>Paris, France</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="assets/logo-mark.png" alt="Yframe">Yframe</div>
+        <p class="footer-tagline">Premium studio for real estate &amp; hospitality — cinematic video and web, one craft standard.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="cinematic-video.html">Cinematic Video</a>
+        <a href="web-digital.html#tier-landing">Landing Page</a>
+        <a href="web-digital.html#tier-business">Business Website</a>
+        <a href="web-digital.html#tier-ecommerce">E-commerce Website</a>
+        <a href="web-digital.html#tier-custom">Custom Interactive Build</a>
+        <a href="web-digital.html#tier-brand">Brand Identity</a>
+        <a href="web-digital.html#tier-seo">SEO</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+33755204078">+33 7 55 20 40 78</a>
+        <a href="mailto:hello@yframe.studio">hello@yframe.studio</a>
+        <p>Paris, France</p>
+      </div>
+      <div class="footer-col">
+        <h4>Social</h4>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Google</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Yframe. All rights reserved.</span>
+      <span>Paris, France</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/main.js"></script>
+<script src="assets/contact.js"></script>
+</body>
+</html>

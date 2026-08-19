@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web &amp; Digital Presence — Yframe</title>
+<meta name="description" content="Websites for real estate and hospitality brands that want more than a platform profile — landing pages to custom interactive builds, from €999.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/web-digital.css">
+</head>
+<body>
+
+<nav id="nav">
+  <div class="container">
+    <a href="index.html" class="nav-brand"><img src="assets/logo-mark.png" alt="Yframe">Yframe</a>
+    <div class="nav-links">
+      <a href="cinematic-video.html">Cinematic Video</a>
+      <a href="web-digital.html" class="active">Web &amp; Digital</a>
+      <a href="portfolio.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<div class="mobile-overlay" id="mobileOverlay">
+  <button class="close-btn" aria-label="Close menu">&times;</button>
+  <a href="cinematic-video.html">Cinematic Video</a>
+  <a href="web-digital.html">Web &amp; Digital</a>
+  <a href="portfolio.html">Work</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<main>
+
+  <!-- Hero — docs/04 §3, build/05 §3: no video, this pillar's proof is the
+       site itself (brief §7 "the medium proves the message"). -->
+  <section class="digital-hero">
+    <div class="container digital-hero-inner">
+      <h1>Beyond Airbnb.</h1>
+      <p class="lead">For agencies, boutique hotels, and independent listings that want more than a platform profile.</p>
+    </div>
+  </section>
+
+  <!-- Service tiers — docs/04 §3 / brief §8b, figures verbatim. Desktop:
+       full table, all columns visible. Mobile: stacked cards (build/05 §3 -
+       a 3-column table doesn't survive narrow viewports). -->
+  <section class="tiers" id="pricing">
+    <div class="container">
+      <table class="tiers-table">
+        <thead>
+          <tr><th>Tier</th><th>Price</th><th>Timeline</th></tr>
+        </thead>
+        <tbody>
+          <tr id="tier-landing">
+            <td data-label="Tier">Landing Page</td>
+            <td data-label="Price">&euro;999</td>
+            <td data-label="Timeline">1 week</td>
+          </tr>
+          <tr id="tier-business" class="tier-featured">
+            <td data-label="Tier">Business Website</td>
+            <td data-label="Price">&euro;1,299</td>
+            <td data-label="Timeline">2 weeks</td>
+          </tr>
+          <tr id="tier-ecommerce">
+            <td data-label="Tier">E-commerce Website</td>
+            <td data-label="Price">&euro;1,499</td>
+            <td data-label="Timeline">3&ndash;4 weeks</td>
+          </tr>
+          <tr id="tier-custom">
+            <td data-label="Tier">Custom Interactive Build</td>
+            <td data-label="Price">&euro;1,999</td>
+            <td data-label="Timeline">4&ndash;6 weeks</td>
+          </tr>
+          <tr id="tier-brand">
+            <td data-label="Tier">Brand Identity <span class="tier-addon">add-on</span></td>
+            <td data-label="Price">&euro;799</td>
+            <td data-label="Timeline">&mdash;</td>
+          </tr>
+          <tr id="tier-seo">
+            <td data-label="Tier">SEO</td>
+            <td data-label="Price">&euro;499 <span class="tier-or">or &euro;249/mo</span></td>
+            <td data-label="Timeline">&mdash;</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="contact.html?service=web" class="btn-primary tiers-cta">Start your project</a>
+    </div>
+  </section>
+
+  <!-- Case studies — docs/04 §3/§0. 2-item grid, both slots "coming soon"
+       at launch. Same layout holds real entries later without a redesign. -->
+  <section class="case-grid">
+    <div class="container case-grid-inner">
+      <div class="case-study-feature">
+        <span class="case-label">Case study</span>
+        <h2>Our first web case study is in production.</h2>
+      </div>
+      <div class="case-study-feature">
+        <span class="case-label">Case study</span>
+        <h2>More work landing soon.</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA band — reused component, pre-set to Web -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>Start your project.</h2>
+      <a href="contact.html?service=web" class="btn-primary">Start your project</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="assets/logo-mark.png" alt="Yframe">Yframe</div>
+        <p class="footer-tagline">Premium studio for real estate &amp; hospitality — cinematic video and web, one craft standard.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="cinematic-video.html">Cinematic Video</a>
+        <a href="web-digital.html#tier-landing">Landing Page</a>
+        <a href="web-digital.html#tier-business">Business Website</a>
+        <a href="web-digital.html#tier-ecommerce">E-commerce Website</a>
+        <a href="web-digital.html#tier-custom">Custom Interactive Build</a>
+        <a href="web-digital.html#tier-brand">Brand Identity</a>
+        <a href="web-digital.html#tier-seo">SEO</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+33755204078">+33 7 55 20 40 78</a>
+        <a href="mailto:hello@yframe.studio">hello@yframe.studio</a>
+        <p>Paris, France</p>
+      </div>
+      <div class="footer-col">
+        <h4>Social</h4>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Google</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Yframe. All rights reserved.</span>
+      <span>Paris, France</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>

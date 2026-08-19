@@ -1,0 +1,24 @@
+/* About page — docs/04-content-map.md §5, build/05-wireframes.md §5 */
+
+.about-header{padding:180px 0 40px;}
+.about-header h1{font-size:clamp(34px,5vw,56px);max-width:14ch;}
+
+.story-body{padding-top:0;}
+.story-body-inner{
+  max-width:60ch;
+  display:flex;
+  flex-direction:column;
+  gap:28px;
+}
+.story-body-inner p{font-size:18px;color:var(--text-dim);}
+.story-emphasis{
+  color:var(--text);
+  font-family:var(--font-display);
+  font-size:22px;
+  line-height:1.4;
+  padding-left:24px;
+  border-left:2px solid var(--accent);
+}
+
+.cta-band-light{padding:64px 0;}
+.cta-band-light h2{font-size:clamp(22px,3vw,30px);margin-bottom:20px;}
