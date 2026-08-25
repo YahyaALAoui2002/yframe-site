@@ -112,17 +112,31 @@ button{cursor:pointer;font-family:inherit;border:none;}
 }
 /* No darkening overlay — the video shows at its native brightness
    (Yahya 2026-08-25). Text carries its own contrast via shadow. */
-/* Frosted glass panel behind the hero copy: strong text legibility over
-   the bright video without dimming the video itself (matches the nav's
-   glass treatment). */
+/* Framed glass card behind the hero copy: transparent panel with a
+   glowing gradient frame (accent blue -> violet, echoing the "Future"
+   gradient). Legible text, video stays at native brightness. */
 .hero-left{
+  position:relative;
   text-shadow:0 2px 28px rgba(6,6,12,.85), 0 1px 3px rgba(6,6,12,.9);
-  background:rgba(6,6,12,0.52);
+  background:rgba(6,6,12,0.42);
   backdrop-filter:blur(18px);
   -webkit-backdrop-filter:blur(18px);
   padding:44px 48px;
-  border-radius:10px;
-  border:1px solid rgba(255,255,255,0.10);
+  border-radius:12px;
+  box-shadow:0 10px 48px rgba(6,6,12,0.35);
+}
+.hero-left::before{
+  content:'';position:absolute;inset:0;border-radius:inherit;
+  padding:1.5px;
+  background:linear-gradient(135deg,
+    rgba(0,102,255,0.85) 0%,
+    rgba(255,255,255,0.30) 45%,
+    rgba(123,47,247,0.85) 100%);
+  -webkit-mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite:xor;
+  mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite:exclude;
+  pointer-events:none;
 }
 .hero-inner{position:relative;z-index:2;height:100%;display:flex;align-items:center;}
 .hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;width:100%;}
