@@ -23,6 +23,9 @@
   text-transform:uppercase;letter-spacing:0.06em;
 }
 .contact-form .optional{text-transform:none;letter-spacing:0;}
+.form-status{font-size:14px;line-height:1.5;min-height:1em;margin:0;}
+.form-status.ok{color:var(--accent);}
+.form-status.error{color:#D9705F;}
 .contact-form input,
 .contact-form select,
 .contact-form textarea{

@@ -47,14 +47,11 @@
        covers video + all 6 web tiers (fix for the old site's web-only
        dropdown, brief §5). No fake urgency copy (brief §4).
 
-       NOTE: GitHub Pages serves static files only - there is no backend to
-       receive a POST. This form submits via a mailto: link built in JS
-       (assets/contact.js), which opens the visitor's email client with the
-       fields pre-filled. That's a stopgap, not a final decision: a real
-       form backend (Formspree, Netlify Forms, or a small serverless
-       endpoint) should be chosen before launch so submissions don't depend
-       on the visitor's local mail client. Flagged in run.json - not decided
-       silently. -->
+       Backend: FormSubmit.co AJAX relay (chosen by Yahya 2026-08-25,
+       replacing the mailto: stopgap) - GitHub Pages stays static, the form
+       POSTs JSON to FormSubmit which emails the submission to the studio
+       inbox. Honeypot field for spam; success/error status rendered
+       inline. See assets/contact.js. -->
   <section class="contact-main">
     <div class="container contact-grid">
       <form id="contactForm" class="contact-form">
@@ -89,7 +86,9 @@
           <span>Message</span>
           <textarea name="message" rows="5" required></textarea>
         </label>
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;height:0;overflow:hidden;">
         <button type="submit" class="btn-primary">Send message</button>
+        <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
       </form>
 
       <div class="contact-details">
