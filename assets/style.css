@@ -145,7 +145,7 @@ button{cursor:pointer;font-family:inherit;border:none;}
   font-size:72px;font-weight:800;line-height:1.08;color:#fff;margin-bottom:22px;
   letter-spacing:-0.02em;
 }
-.hero-headline .grad{background:linear-gradient(90deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.hero-headline .grad{color:var(--accent);}
 .hero-sub{font-size:20px;color:rgba(255,255,255,0.85);line-height:1.6;max-width:520px;margin-bottom:34px;}
 .hero-ctas{display:flex;gap:16px;margin-bottom:30px;flex-wrap:wrap;}
 .btn-primary{
