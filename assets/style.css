@@ -112,8 +112,17 @@ button{cursor:pointer;font-family:inherit;border:none;}
 }
 /* No darkening overlay — the video shows at its native brightness
    (Yahya 2026-08-25). Text carries its own contrast via shadow. */
+/* Frosted glass panel behind the hero copy: strong text legibility over
+   the bright video without dimming the video itself (matches the nav's
+   glass treatment). */
 .hero-left{
   text-shadow:0 2px 28px rgba(6,6,12,.85), 0 1px 3px rgba(6,6,12,.9);
+  background:rgba(6,6,12,0.52);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  padding:44px 48px;
+  border-radius:10px;
+  border:1px solid rgba(255,255,255,0.10);
 }
 .hero-inner{position:relative;z-index:2;height:100%;display:flex;align-items:center;}
 .hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;width:100%;}
