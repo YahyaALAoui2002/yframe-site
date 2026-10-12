@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Vanilla Tilt on service / include cards
   if (window.VanillaTilt) {
     VanillaTilt.init(document.querySelectorAll('.service-card, .include-card'), { max: 6, speed: 400, glare: true, 'max-glare': 0.15, perspective: 800 });
+    VanillaTilt.init(document.querySelectorAll('.code-card'), { max: 8, speed: 400, glare: true, 'max-glare': 0.12, perspective: 900, scale: 1.02 });
   }
 
   // FAQ accordion
