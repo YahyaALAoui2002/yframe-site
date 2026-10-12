@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="assets/style.css?v=5">
+<link rel="stylesheet" href="assets/style.css?v=6">
 </head>
 <body>
 
@@ -52,7 +52,6 @@
       <div class="hero-left">
         <div class="section-label">FUTURISTIC WEB DESIGN STUDIO IN PARIS</div>
         <h1 class="hero-headline" data-splitting>Websites That Feel Like The <span class="grad">Future</span></h1>
-        <p class="hero-sub">YFrame is an independent web design studio in Paris. Every site we build is designed and hand-coded from scratch, no templates, no page builders, for brands that want their website to actually feel different.</p>
         <div class="hero-ctas">
           <a href="#contact" class="btn-primary">Start Your Project</a>
           <a href="tel:+33755204078" class="btn-secondary">Call +33 7 55 20 40 78</a>
@@ -70,17 +69,6 @@
     <span>⭐ 4.9 Google Rating</span><span>✓ Based in Paris, France</span><span>🏆 20+ Countries Served</span><span>✓ 3+ Years in Business</span><span>⭐ 90+ Projects Launched</span><span>✓ #1 Rated Web Design Studio in Paris</span><span>✓ Fully Remote-Friendly</span>
   </div>
 </div>
-
-<!-- TRUST BAR -->
-<section id="trust">
-  <div class="container trust-grid">
-    <div class="trust-item"><i class="fa-solid fa-diagram-project"></i><div class="trust-num" data-count="90">0</div><div class="trust-lbl">Projects Delivered</div></div>
-    <div class="trust-item"><i class="fa-solid fa-earth-europe"></i><div class="trust-num" data-count="20">0</div><div class="trust-lbl">Countries Served</div></div>
-    <div class="trust-item"><i class="fa-solid fa-calendar-check"></i><div class="trust-num" data-count="3">0</div><div class="trust-lbl">Years in Business</div></div>
-    <div class="trust-item"><i class="fa-solid fa-arrow-trend-up"></i><div class="trust-num" data-count="40">0</div><div class="trust-lbl">Avg. Engagement Lift %</div></div>
-    <div class="trust-item"><i class="fa-solid fa-star"></i><div class="trust-num">4.9 ★</div><div class="trust-lbl">Google Rating</div></div>
-  </div>
-</section>
 
 <!-- SERVICES -->
 <section id="services" class="dot-grid">
@@ -390,25 +378,7 @@
 // Hero headline stagger (page-specific: index hero only)
 Splitting();
 gsap.from('.hero-headline .word', { y: 40, opacity: 0, duration: 0.8, stagger: 0.08, ease: 'power3.out' });
-gsap.from('.hero-sub', { y: 20, opacity: 0, duration: 0.8, delay: 0.3, ease: 'power3.out' });
 gsap.from('.hero-ctas', { y: 20, opacity: 0, duration: 0.8, delay: 0.45, ease: 'power3.out' });
-
-// Trust bar counters (index page only)
-const counters = document.querySelectorAll('.trust-num[data-count]');
-const counterObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      const el = entry.target;
-      const target = parseInt(el.getAttribute('data-count'));
-      gsap.to(el, {
-        innerHTML: target, duration: 2, ease: 'expo.out', snap: { innerHTML: 1 },
-        onUpdate: () => { el.textContent = Math.round(gsap.getProperty(el, 'innerHTML')); }
-      });
-      counterObserver.unobserve(el);
-    }
-  });
-}, { threshold: 0.5 });
-counters.forEach(c => counterObserver.observe(c));
 
 // Testimonials carousel (index page only)
 new Swiper('.testimonials-swiper', {
