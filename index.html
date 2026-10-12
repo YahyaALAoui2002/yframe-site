@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="assets/style.css?v=7">
+<link rel="stylesheet" href="assets/style.css?v=8">
 </head>
 <body>
 
@@ -21,21 +21,29 @@
   <div class="container">
     <a href="#hero" class="brand"><span class="brand-mark"><img src="assets/logo-mark.png" alt="YFrame"></span>YFrame</a>
     <div class="nav-links">
-      <a href="#services">Services</a>
-      <a href="#gallery">Work</a>
-      <a href="#contact">Contact</a>
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
     </div>
     <div class="nav-right">
+      <div class="lang-toggle" role="group" aria-label="Language switcher">
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+        <span class="lang-sep">|</span>
+        <button type="button" class="lang-btn" data-lang="fr">FR</button>
+      </div>
       <a href="tel:+33755204078" class="nav-phone">+33 7 55 20 40 78</a>
-      <a href="#contact" class="btn-cta">Get Free Quote</a>
+      <a href="#contact" class="btn-cta" data-i18n="nav.cta">Get Free Quote</a>
     </div>
     <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
   </div>
 </nav>
 <div class="mobile-overlay" id="mobileOverlay">
-  <a href="#services">Services</a>
-  <a href="#gallery">Work</a>
-  <a href="#contact">Contact</a>
+  <a href="#services" data-i18n="nav.services">Services</a>
+  <a href="#contact" data-i18n="nav.contact">Contact</a>
+  <div class="lang-toggle lang-toggle-mobile" role="group" aria-label="Language switcher">
+    <button type="button" class="lang-btn" data-lang="en">EN</button>
+    <span class="lang-sep">|</span>
+    <button type="button" class="lang-btn" data-lang="fr">FR</button>
+  </div>
 </div>
 
 <!-- HERO -->
@@ -45,11 +53,11 @@
   <div class="hero-inner container">
     <div class="hero-grid">
       <div class="hero-left">
-        <div class="section-label">FUTURISTIC WEB DESIGN STUDIO IN PARIS</div>
-        <h1 class="hero-headline" data-splitting>Websites That Feel Like The <span class="grad">Future</span></h1>
+        <div class="section-label" data-i18n="hero.label">FUTURISTIC WEB DESIGN STUDIO IN PARIS</div>
+        <h1 class="hero-headline" data-splitting data-i18n="hero.title">Websites That Feel Like The <span class="grad">Future</span></h1>
         <div class="hero-ctas">
-          <a href="#contact" class="btn-primary">Start Your Project</a>
-          <a href="tel:+33755204078" class="btn-secondary">Call +33 7 55 20 40 78</a>
+          <a href="#contact" class="btn-primary" data-i18n="hero.ctaPrimary">Start Your Project</a>
+          <a href="tel:+33755204078" class="btn-secondary" data-i18n="hero.ctaSecondary">Call +33 7 55 20 40 78</a>
         </div>
       </div>
     </div>
@@ -60,53 +68,53 @@
 <section id="services" class="dot-grid">
   <div class="container">
     <div class="services-head">
-      <div class="section-label">WHAT WE DO</div>
-      <h2>Design and Development, Built to Feel Alive</h2>
-      <p>Every price below is one number for the whole job, design and development together, not two separate invoices. No templates, no hidden hours.</p>
+      <div class="section-label" data-i18n="services.label">WHAT WE DO</div>
+      <h2 data-i18n="services.heading">Design and Development, Built to Feel Alive</h2>
+      <p data-i18n="services.sub">Every price below is one number for the whole job, design and development together, not two separate invoices. No templates, no hidden hours.</p>
     </div>
     <div class="services-grid">
       <div class="service-card featured" data-aos="fade-up" data-aos-delay="0">
-        <span class="service-badge">POPULAR</span>
+        <span class="service-badge" data-i18n="services.popular">POPULAR</span>
         <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
-        <h3>Business Website</h3>
-        <div class="card-price"><span class="amount">From &euro;1,299</span><span class="period">&middot; 2 weeks</span></div>
-        <p>A complete site, designed and built end to end: home, services, about, contact. The package most businesses actually need.</p>
-        <a href="services/business-website.html" class="service-link">Learn More →</a>
+        <h3 data-i18n="service.businessWebsite">Business Website</h3>
+        <div class="card-price"><span class="amount" data-i18n="services.card1.amount">From &euro;1,299</span><span class="period" data-i18n="services.card1.period">&middot; 2 weeks</span></div>
+        <p data-i18n="services.card1.desc">A complete site, designed and built end to end: home, services, about, contact. The package most businesses actually need.</p>
+        <a href="services/business-website.html" class="service-link" data-i18n="common.learnMore">Learn More →</a>
       </div>
       <div class="service-card" data-aos="fade-up" data-aos-delay="80">
         <div class="service-icon"><i class="fa-solid fa-bolt"></i></div>
-        <h3>Landing Page</h3>
-        <div class="card-price"><span class="amount">From &euro;999</span><span class="period">&middot; 1 week</span></div>
-        <p>One page, one goal. The fastest way to get a real, custom-built site live for a launch or a lean first version.</p>
-        <a href="services/landing-page.html" class="service-link">Learn More →</a>
+        <h3 data-i18n="service.landingPage">Landing Page</h3>
+        <div class="card-price"><span class="amount" data-i18n="services.card2.amount">From &euro;999</span><span class="period" data-i18n="services.card2.period">&middot; 1 week</span></div>
+        <p data-i18n="services.card2.desc">One page, one goal. The fastest way to get a real, custom-built site live for a launch or a lean first version.</p>
+        <a href="services/landing-page.html" class="service-link" data-i18n="common.learnMore">Learn More →</a>
       </div>
       <div class="service-card" data-aos="fade-up" data-aos-delay="160">
         <div class="service-icon"><i class="fa-solid fa-cart-shopping"></i></div>
-        <h3>E-commerce Website</h3>
-        <div class="card-price"><span class="amount">From &euro;1,499</span><span class="period">&middot; 3&ndash;4 weeks</span></div>
-        <p>A storefront built to convert: product pages, checkout, and platform integration included.</p>
-        <a href="services/ecommerce-website.html" class="service-link">Learn More →</a>
+        <h3 data-i18n="service.ecommerce">E-commerce Website</h3>
+        <div class="card-price"><span class="amount" data-i18n="services.card3.amount">From &euro;1,499</span><span class="period" data-i18n="services.card3.period">&middot; 3&ndash;4 weeks</span></div>
+        <p data-i18n="services.card3.desc">A storefront built to convert: product pages, checkout, and platform integration included.</p>
+        <a href="services/ecommerce-website.html" class="service-link" data-i18n="common.learnMore">Learn More →</a>
       </div>
       <div class="service-card" data-aos="fade-up" data-aos-delay="240">
         <div class="service-icon"><i class="fa-solid fa-cube"></i></div>
-        <h3>Custom Interactive Build</h3>
-        <div class="card-price"><span class="amount">From &euro;1,999</span><span class="period">&middot; 4&ndash;6 weeks</span></div>
-        <p>WebGL, scroll storytelling, and 3D-first builds for launches and moments that need to be remembered.</p>
-        <a href="services/custom-interactive.html" class="service-link">Learn More →</a>
+        <h3 data-i18n="service.customInteractive">Custom Interactive Build</h3>
+        <div class="card-price"><span class="amount" data-i18n="services.card4.amount">From &euro;1,999</span><span class="period" data-i18n="services.card4.period">&middot; 4&ndash;6 weeks</span></div>
+        <p data-i18n="services.card4.desc">WebGL, scroll storytelling, and 3D-first builds for launches and moments that need to be remembered.</p>
+        <a href="services/custom-interactive.html" class="service-link" data-i18n="common.learnMore">Learn More →</a>
       </div>
       <div class="service-card" data-aos="fade-up" data-aos-delay="320">
         <div class="service-icon"><i class="fa-solid fa-palette"></i></div>
-        <h3>Brand Identity</h3>
-        <div class="card-price"><span class="amount">From &euro;799</span><span class="period">&middot; add-on</span></div>
-        <p>Logo, color, type, and voice, built as a standalone system or bundled with any website package.</p>
-        <a href="services/brand-identity.html" class="service-link">Learn More →</a>
+        <h3 data-i18n="service.brandIdentity">Brand Identity</h3>
+        <div class="card-price"><span class="amount" data-i18n="services.card5.amount">From &euro;799</span><span class="period" data-i18n="services.card5.period">&middot; add-on</span></div>
+        <p data-i18n="services.card5.desc">Logo, color, type, and voice, built as a standalone system or bundled with any website package.</p>
+        <a href="services/brand-identity.html" class="service-link" data-i18n="common.learnMore">Learn More →</a>
       </div>
       <div class="service-card" data-aos="fade-up" data-aos-delay="400">
         <div class="service-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
-        <h3>SEO</h3>
-        <div class="card-price"><span class="amount">&euro;499</span><span class="period">or &euro;249/mo</span></div>
-        <p>Technical audit, keyword research, and local search optimization, so the site we build actually gets found.</p>
-        <a href="services/seo.html" class="service-link">Learn More →</a>
+        <h3 data-i18n="service.seo">SEO</h3>
+        <div class="card-price"><span class="amount" data-i18n="services.card6.amount">&euro;499</span><span class="period" data-i18n="services.card6.period">or &euro;249/mo</span></div>
+        <p data-i18n="services.card6.desc">Technical audit, keyword research, and local search optimization, so the site we build actually gets found.</p>
+        <a href="services/seo.html" class="service-link" data-i18n="common.learnMore">Learn More →</a>
       </div>
     </div>
   </div>
@@ -116,54 +124,25 @@
 <section id="how">
   <div class="container">
     <div class="how-head">
-      <div class="section-label">HOW WE WORK</div>
-      <h2>Three Steps From Idea to Launch</h2>
-      <p>No bloated process. No account managers. You work directly with the people building your site.</p>
+      <div class="section-label" data-i18n="process.label">HOW WE WORK</div>
+      <h2 data-i18n="process.heading">Three Steps From Idea to Launch</h2>
+      <p data-i18n="process.sub">No bloated process. No account managers. You work directly with the people building your site.</p>
     </div>
     <div class="process-row">
       <div class="process-step" data-aos="fade-up" data-aos-delay="0">
         <div class="step-num">01</div>
-        <div class="step-title">Discover</div>
-        <div class="step-desc">A deep-dive call to understand your brand, your audience, and what "futuristic" should actually mean for your business.</div>
+        <div class="step-title" data-i18n="process.step1.title">Discover</div>
+        <div class="step-desc" data-i18n="process.step1.desc">A deep-dive call to understand your brand, your audience, and what "futuristic" should actually mean for your business.</div>
       </div>
       <div class="process-step" data-aos="fade-up" data-aos-delay="120">
         <div class="step-num">02</div>
-        <div class="step-title">Design & Prototype</div>
-        <div class="step-desc">We build a real interactive prototype, not static mockups, so you feel the site before a single line of production code is written.</div>
+        <div class="step-title" data-i18n="process.step2.title">Design &amp; Prototype</div>
+        <div class="step-desc" data-i18n="process.step2.desc">We build a real interactive prototype, not static mockups, so you feel the site before a single line of production code is written.</div>
       </div>
       <div class="process-step" data-aos="fade-up" data-aos-delay="240">
         <div class="step-num">03</div>
-        <div class="step-title">Build & Launch</div>
-        <div class="step-desc">Pixel-perfect development, cross-browser QA, launch, and two weeks of post-launch support included.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- GALLERY -->
-<section id="gallery" class="dot-grid">
-  <div class="container">
-    <div class="gallery-head">
-      <div class="section-label">OUR WORK</div>
-      <h2>Selected Projects</h2>
-      <p>A few of the sites we've shipped for clients across three continents.</p>
-    </div>
-    <div class="gallery-grid">
-      <div class="g-item g-1" data-aos="fade-up" data-aos-delay="0">
-        <img src="https://images.unsplash.com/photo-1603201667106-0e3e0ae584c5?w=1200&q=85" alt="SaaS dashboard redesign">
-        <div class="g-caption"><div class="g-cat">SAAS PLATFORM</div><div class="g-cap">Dashboard redesign for a Stockholm fintech startup</div></div>
-      </div>
-      <div class="g-item g-2" data-aos="fade-up" data-aos-delay="100">
-        <img src="https://images.unsplash.com/photo-1526560244950-1a3c1ace48f9?w=900&q=85" alt="E-commerce storefront design">
-        <div class="g-caption"><div class="g-cat">E-COMMERCE</div><div class="g-cap">Immersive storefront, Singapore fashion label</div></div>
-      </div>
-      <a class="g-item g-3" href="portfolio/aurelia/index.html" target="_blank" rel="noopener" data-aos="fade-up" data-aos-delay="200">
-        <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=85" alt="Interactive 3D architecture site for AURELIA">
-        <div class="g-caption"><div class="g-cat">INTERACTIVE 3D</div><div class="g-cap">AURELIA — architecture &amp; landscape studio, live demo</div></div>
-      </a>
-      <div class="g-item g-4" data-aos="fade-up" data-aos-delay="300">
-        <img src="https://images.unsplash.com/photo-1573164574230-db1d5e960238?w=1200&q=85" alt="Creative agency team at work">
-        <div class="g-caption"><div class="g-cat">BRAND + WEB</div><div class="g-cap">Identity and site for a Mexico City real estate group</div></div>
+        <div class="step-title" data-i18n="process.step3.title">Build &amp; Launch</div>
+        <div class="step-desc" data-i18n="process.step3.desc">Pixel-perfect development, cross-browser QA, launch, and two weeks of post-launch support included.</div>
       </div>
     </div>
   </div>
@@ -195,22 +174,22 @@
             </div>
           </div>
         </div>
-        <div class="float-chip chip-1" data-aos="fade-up" data-aos-delay="300"><i class="fa-solid fa-bolt"></i>Award-worthy motion</div>
-        <div class="float-chip chip-2" data-aos="fade-up" data-aos-delay="450"><i class="fa-solid fa-layer-group"></i>Zero templates</div>
+        <div class="float-chip chip-1" data-aos="fade-up" data-aos-delay="300"><i class="fa-solid fa-bolt"></i><span data-i18n="why.chip1">Award-worthy motion</span></div>
+        <div class="float-chip chip-2" data-aos="fade-up" data-aos-delay="450"><i class="fa-solid fa-layer-group"></i><span data-i18n="why.chip2">Zero templates</span></div>
       </div>
     </div>
     <div class="why-content">
-      <div class="section-label">WHY CHOOSE US</div>
-      <h2 data-aos="fade-left">Zero Templates. Every Site Custom-Built.</h2>
+      <div class="section-label" data-i18n="why.label">WHY CHOOSE US</div>
+      <h2 data-aos="fade-left" data-i18n="why.heading">Zero Templates. Every Site Custom-Built.</h2>
       <ul class="why-list">
-        <li data-aos="fade-left" data-aos-delay="100"><span class="why-check"><i class="fa-solid fa-check"></i></span><span>Every site custom-coded, zero page-builder templates</span></li>
-        <li data-aos="fade-left" data-aos-delay="200"><span class="why-check"><i class="fa-solid fa-check"></i></span><span>Award-worthy motion design, native GSAP and WebGL</span></li>
-        <li data-aos="fade-left" data-aos-delay="300"><span class="why-check"><i class="fa-solid fa-check"></i></span><span>Fully remote-friendly workflow across every timezone</span></li>
-        <li data-aos="fade-left" data-aos-delay="400"><span class="why-check"><i class="fa-solid fa-check"></i></span><span>Average 40% increase in time-on-site after launch</span></li>
-        <li data-aos="fade-left" data-aos-delay="500"><span class="why-check"><i class="fa-solid fa-check"></i></span><span>Direct access to your designer and developer, no middlemen</span></li>
-        <li data-aos="fade-left" data-aos-delay="600"><span class="why-check"><i class="fa-solid fa-check"></i></span><span>Fixed-scope pricing, no surprise invoices</span></li>
+        <li data-aos="fade-left" data-aos-delay="100"><span class="why-check"><i class="fa-solid fa-check"></i></span><span data-i18n="why.list1">Every site custom-coded, zero page-builder templates</span></li>
+        <li data-aos="fade-left" data-aos-delay="200"><span class="why-check"><i class="fa-solid fa-check"></i></span><span data-i18n="why.list2">Award-worthy motion design, native GSAP and WebGL</span></li>
+        <li data-aos="fade-left" data-aos-delay="300"><span class="why-check"><i class="fa-solid fa-check"></i></span><span data-i18n="why.list3">Fully remote-friendly workflow across every timezone</span></li>
+        <li data-aos="fade-left" data-aos-delay="400"><span class="why-check"><i class="fa-solid fa-check"></i></span><span data-i18n="why.list4">Average 40% increase in time-on-site after launch</span></li>
+        <li data-aos="fade-left" data-aos-delay="500"><span class="why-check"><i class="fa-solid fa-check"></i></span><span data-i18n="why.list5">Direct access to your designer and developer, no middlemen</span></li>
+        <li data-aos="fade-left" data-aos-delay="600"><span class="why-check"><i class="fa-solid fa-check"></i></span><span data-i18n="why.list6">Fixed-scope pricing, no surprise invoices</span></li>
       </ul>
-      <a href="#contact" class="btn-primary">Get Started Today</a>
+      <a href="#contact" class="btn-primary" data-i18n="why.cta">Get Started Today</a>
     </div>
   </div>
 </section>
@@ -220,12 +199,12 @@
   <div class="cta-ghost">DESIGN</div>
   <div class="container">
     <div class="cta-content">
-      <div class="section-label" data-aos="fade-up">READY TO GET STARTED?</div>
-      <h2 data-aos="fade-up" data-aos-delay="80">Let's Build a Website Your Competitors Can't Copy</h2>
-      <p class="sub" data-aos="fade-up" data-aos-delay="160">No pressure, no obligation. We'll show you what's possible before you sign anything.</p>
+      <div class="section-label" data-aos="fade-up" data-i18n="cta.label">READY TO GET STARTED?</div>
+      <h2 data-aos="fade-up" data-aos-delay="80" data-i18n="cta.heading">Let's Build a Website Your Competitors Can't Copy</h2>
+      <p class="sub" data-aos="fade-up" data-aos-delay="160" data-i18n="cta.sub">No pressure, no obligation. We'll show you what's possible before you sign anything.</p>
       <a href="tel:+33755204078" class="cta-phone" data-aos="fade-up" data-aos-delay="240">+33 7 55 20 40 78</a>
-      <a href="#contact" class="btn-primary" data-aos="fade-up" data-aos-delay="320">Book Your Free Quote Today</a>
-      <div class="cta-reassure" data-aos="fade-up" data-aos-delay="400">Typically responds within 2 hours</div>
+      <a href="#contact" class="btn-primary" data-aos="fade-up" data-aos-delay="320" data-i18n="cta.button">Book Your Free Quote Today</a>
+      <div class="cta-reassure" data-aos="fade-up" data-aos-delay="400" data-i18n="cta.reassure">Typically responds within 2 hours</div>
     </div>
   </div>
 </section>
@@ -233,37 +212,37 @@
 <!-- CONTACT -->
 <section id="contact">
   <div class="container">
-    <h2>Get In Touch</h2>
+    <h2 data-i18n="contact.heading">Get In Touch</h2>
     <div class="contact-grid">
       <div class="contact-info">
-        <h3>Ready to talk?</h3>
-        <p>Based in Paris, working with brands across Europe, North America, and Asia.</p>
+        <h3 data-i18n="contact.subheading">Ready to talk?</h3>
+        <p data-i18n="contact.intro">Based in Paris, working with brands across Europe, North America, and Asia.</p>
         <div class="contact-row"><i class="fa-solid fa-phone"></i><a href="tel:+33755204078">+33 7 55 20 40 78</a></div>
         <div class="contact-row"><i class="fa-solid fa-envelope"></i><a href="mailto:alaoui.yahya2020@gmail.com">alaoui.yahya2020@gmail.com</a></div>
-        <div class="contact-row"><i class="fa-solid fa-clock"></i>Mon–Fri: 9:00–19:00 CET · Remote consultations worldwide</div>
+        <div class="contact-row"><i class="fa-solid fa-clock"></i><span data-i18n="contact.hours">Mon–Fri: 9:00–19:00 CET · Remote consultations worldwide</span></div>
         <ul class="contact-areas">
-          <li>Also collaborating regularly with teams in:</li>
+          <li data-i18n="contact.collab">Also collaborating regularly with teams in:</li>
           <li>London · New York · Singapore · Dubai</li>
         </ul>
       </div>
       <form id="contactForm">
-        <div class="form-group"><label>Full Name</label><input type="text" required placeholder="Your name"></div>
-        <div class="form-group"><label>Phone Number</label><input type="tel" required placeholder="+33 ..."></div>
+        <div class="form-group"><label data-i18n="form.name">Full Name</label><input type="text" required placeholder="Your name" data-i18n-placeholder="form.namePlaceholder"></div>
+        <div class="form-group"><label data-i18n="form.phone">Phone Number</label><input type="tel" required placeholder="+33 ..." data-i18n-placeholder="form.phonePlaceholder"></div>
         <div class="form-group">
-          <label>Service Needed</label>
+          <label data-i18n="form.service">Service Needed</label>
           <select required>
-            <option value="">Select a service</option>
-            <option>Landing Page</option>
-            <option>Business Website</option>
-            <option>E-commerce Website</option>
-            <option>Custom Interactive Build</option>
-            <option>Brand Identity</option>
-            <option>SEO</option>
-            <option>Not Sure Yet</option>
+            <option value="" data-i18n="form.selectService">Select a service</option>
+            <option data-i18n="service.landingPage">Landing Page</option>
+            <option data-i18n="service.businessWebsite">Business Website</option>
+            <option data-i18n="service.ecommerce">E-commerce Website</option>
+            <option data-i18n="service.customInteractive">Custom Interactive Build</option>
+            <option data-i18n="service.brandIdentity">Brand Identity</option>
+            <option data-i18n="service.seo">SEO</option>
+            <option data-i18n="form.notSure">Not Sure Yet</option>
           </select>
         </div>
-        <div class="form-group"><label>Anything else we should know? (optional)</label><textarea rows="4" placeholder="Tell us about your project"></textarea></div>
-        <button type="submit" class="btn-submit">Send My Request →</button>
+        <div class="form-group"><label data-i18n="form.notes">Anything else we should know? (optional)</label><textarea rows="4" placeholder="Tell us about your project" data-i18n-placeholder="form.notesPlaceholder"></textarea></div>
+        <button type="submit" class="btn-submit" data-i18n="form.submit">Send My Request →</button>
       </form>
     </div>
   </div>
@@ -275,7 +254,7 @@
     <div class="footer-grid">
       <div>
         <div class="footer-brand"><span class="brand-mark"><img src="assets/logo-mark.png" alt="YFrame"></span>YFrame</div>
-        <p class="footer-tag">Independent web design studio in Paris. Custom-coded, interactive websites, no templates, no shortcuts.</p>
+        <p class="footer-tag" data-i18n="footer.tagline">Independent web design studio in Paris. Custom-coded, interactive websites, no templates, no shortcuts.</p>
         <div class="footer-social">
           <a href="#"><i class="fa-brands fa-instagram"></i></a>
           <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -283,34 +262,34 @@
         </div>
       </div>
       <div class="footer-col">
-        <h4>Packages</h4>
-        <a href="services/landing-page.html">Landing Page</a>
-        <a href="services/business-website.html">Business Website</a>
-        <a href="services/ecommerce-website.html">E-commerce Website</a>
-        <a href="services/custom-interactive.html">Custom Interactive Build</a>
-        <a href="services/brand-identity.html">Brand Identity</a>
-        <a href="services/seo.html">SEO</a>
+        <h4 data-i18n="footer.packages">Packages</h4>
+        <a href="services/landing-page.html" data-i18n="service.landingPage">Landing Page</a>
+        <a href="services/business-website.html" data-i18n="service.businessWebsite">Business Website</a>
+        <a href="services/ecommerce-website.html" data-i18n="service.ecommerce">E-commerce Website</a>
+        <a href="services/custom-interactive.html" data-i18n="service.customInteractive">Custom Interactive Build</a>
+        <a href="services/brand-identity.html" data-i18n="service.brandIdentity">Brand Identity</a>
+        <a href="services/seo.html" data-i18n="service.seo">SEO</a>
       </div>
       <div class="footer-col">
-        <h4>Contact</h4>
+        <h4 data-i18n="footer.contact">Contact</h4>
         <a href="tel:+33755204078"><i class="fa-solid fa-phone"></i> +33 7 55 20 40 78</a>
         <a href="mailto:alaoui.yahya2020@gmail.com"><i class="fa-solid fa-envelope"></i> alaoui.yahya2020@gmail.com</a>
         <p><i class="fa-solid fa-map-marker-alt"></i> Paris, France</p>
       </div>
       <div class="footer-col">
-        <h4>Quick Links</h4>
-        <a href="#hero">Home</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-        <a href="#">Privacy</a>
+        <h4 data-i18n="footer.quicklinks">Quick Links</h4>
+        <a href="#hero" data-i18n="footer.home">Home</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <a href="#" data-i18n="footer.privacy">Privacy</a>
       </div>
     </div>
     <div class="footer-divider"></div>
-    <div class="footer-bottom">© 2026 YFrame. All rights reserved. · Paris, France</div>
+    <div class="footer-bottom" data-i18n="footer.bottom">© 2026 YFrame. All rights reserved. · Paris, France</div>
   </div>
 </footer>
 
-<a href="tel:+33755204078" class="call-fab"><i class="fa-solid fa-phone"></i><span class="call-tooltip">Call Now</span></a>
+<a href="tel:+33755204078" class="call-fab"><i class="fa-solid fa-phone"></i><span class="call-tooltip" data-i18n="callFab.tooltip">Call Now</span></a>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -319,6 +298,7 @@
 <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
 
+<script src="assets/i18n.js"></script>
 <script src="assets/main.js"></script>
 <script>
 // Hero headline stagger (page-specific: index hero only)

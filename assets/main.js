@@ -90,7 +90,8 @@ document.addEventListener('DOMContentLoaded', () => {
   if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
       e.preventDefault();
-      this.innerHTML = '<div style="text-align:center;padding:40px 0;"><p style="font-size:24px;font-weight:700;color:#0066FF;">Got it. We will be in touch within 2 hours.</p><p style="font-size:16px;color:#666;margin-top:8px;">Check your inbox, we usually reply by email first.</p></div>';
+      const t = window.yframeI18n ? window.yframeI18n.t : (key) => key;
+      this.innerHTML = '<div style="text-align:center;padding:40px 0;"><p style="font-size:24px;font-weight:700;color:#0066FF;">' + t('contact.successTitle') + '</p><p style="font-size:16px;color:#666;margin-top:8px;">' + t('contact.successSubtitle') + '</p></div>';
     });
   }
 });
