@@ -159,8 +159,6 @@ button{cursor:pointer;font-family:inherit;border:none;}
 }
 .btn-secondary::before{content:'';position:absolute;inset:0;background:rgba(255,255,255,0.12);transform:scaleX(0);transform-origin:left;transition:transform 0.35s ease;z-index:-1;}
 .btn-secondary:hover::before{transform:scaleX(1);}
-.hero-trust{font-size:13px;color:rgba(255,255,255,0.65);}
-
 .hero-right{position:relative;}
 .hero-photo-wrap{
   position:relative;animation:heroFloat 8s ease-in-out infinite;
@@ -189,17 +187,6 @@ button{cursor:pointer;font-family:inherit;border:none;}
   .hero-grid{grid-template-columns:1fr;}
   .hero-headline{font-size:42px;}
 }
-
-/* ---------- Marquee ---------- */
-.marquee-wrap{
-  background:linear-gradient(90deg,var(--accent),var(--accent-2));
-  padding:14px 0;overflow:hidden;white-space:nowrap;position:relative;
-}
-.marquee-track{display:inline-flex;animation:marquee 28s linear infinite;}
-.marquee-track span{
-  font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#fff;padding:0 14px;
-}
-@keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 
 /* ---------- Dot grid texture ---------- */
 .dot-grid{
