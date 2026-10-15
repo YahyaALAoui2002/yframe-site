@@ -1,9 +1,7 @@
 /* YFrame i18n: strings shared by the service pages (services/*.html). Strings shared with the home page live in assets/i18n.js (EN + FR). */
 (window.YFRAME_I18N_PAGES = window.YFRAME_I18N_PAGES || []).push({
   en: {
-    'svc.work': 'Work',
     'svc.about': 'About',
-    'svc.reviews': 'Reviews',
     'svc.package': 'PACKAGE',
     'svc.the_package': 'THE PACKAGE',
     'svc.typical_timeline': 'Typical Timeline',
@@ -22,9 +20,7 @@
     'svc.typically_responds_within_2': 'Typically responds within 2 hours &middot; Serving clients worldwide from Paris since 2023'
   },
   fr: {
-    'svc.work': 'Réalisations',
     'svc.about': 'À Propos',
-    'svc.reviews': 'Avis',
     'svc.package': 'FORMULE',
     'svc.the_package': 'LA FORMULE',
     'svc.typical_timeline': 'Délai Habituel',
