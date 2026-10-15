@@ -18,12 +18,12 @@
       'services.sub': 'Every price below is one number for the whole job, design and development together, not two separate invoices. No templates, no hidden hours.',
       'services.popular': 'POPULAR',
 
-      'services.card1.amount': 'From &euro;1,299',
-      'services.card1.period': '&middot; 2 weeks',
+      'services.card1.amount': 'From &euro;1,099',
+      'services.card1.period': '&middot; 3 weeks',
       'services.card1.desc': 'A complete site, designed and built end to end: home, services, about, contact. The package most businesses actually need.',
 
-      'services.card2.amount': 'From &euro;999',
-      'services.card2.period': '&middot; 1 week',
+      'services.card2.amount': 'From &euro;899',
+      'services.card2.period': '&middot; 2 weeks',
       'services.card2.desc': 'One page, one goal. The fastest way to get a real, custom-built site live for a launch or a lean first version.',
 
       'services.card3.amount': 'From &euro;1,499',
@@ -127,12 +127,12 @@
       'services.sub': "Chaque prix ci-dessous correspond à l'ensemble du projet, design et développement réunis, et non à deux factures séparées. Pas de templates, pas d'heures cachées.",
       'services.popular': 'POPULAIRE',
 
-      'services.card1.amount': 'À partir de 1 299 €',
-      'services.card1.period': '&middot; 2 semaines',
+      'services.card1.amount': 'À partir de 1 099 €',
+      'services.card1.period': '&middot; 3 semaines',
       'services.card1.desc': "Un site complet, conçu et développé de A à Z : accueil, services, à propos, contact. La formule dont la plupart des entreprises ont besoin.",
 
-      'services.card2.amount': 'À partir de 999 €',
-      'services.card2.period': '&middot; 1 semaine',
+      'services.card2.amount': 'À partir de 899 €',
+      'services.card2.period': '&middot; 2 semaines',
       'services.card2.desc': "Une page, un objectif. Le moyen le plus rapide de mettre en ligne un site sur-mesure pour un lancement ou une première version efficace.",
 
       'services.card3.amount': 'À partir de 1 499 €',
