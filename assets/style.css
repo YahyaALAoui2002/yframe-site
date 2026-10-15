@@ -503,7 +503,7 @@ footer{background:var(--dark);border-top:3px solid var(--accent);padding:64px 0 
 @media(max-width:600px){.related-grid{grid-template-columns:1fr;}}
 
 @media(max-width:900px){
-  .nav-links,.nav-phone{display:none;}
+  .nav-links,.nav-phone,.nav-right .lang-toggle{display:none;}
   .hamburger{display:flex;}
   .hero-headline{font-size:44px;}
   .services-head h2,.test-head h2{font-size:34px;}

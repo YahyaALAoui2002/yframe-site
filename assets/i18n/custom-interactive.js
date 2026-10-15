@@ -1,0 +1,117 @@
+/* YFrame i18n: services/custom-interactive.html (EN + FR). */
+(window.YFRAME_I18N_PAGES = window.YFRAME_I18N_PAGES || []).push({
+  en: {
+    'meta.title': 'Custom Interactive Build — YFrame, Paris',
+    'meta.description': 'WebGL, scroll storytelling, and 3D-first sites. How YFrame builds interactive experiences that respond to every scroll and click.',
+
+    'custom.hero.sites_that_respond_to': 'Sites That Respond to Every Scroll and Click',
+    'custom.hero.for_launches_portfolios_and': 'For launches, portfolios, and brands that need to make a moment, not just a page. WebGL, scroll-triggered storytelling, and 3D-first builds that turn a website into something people actually remember.',
+
+    'custom.overview.not_every_site_needs': 'Not Every Site Needs This. Some Absolutely Do.',
+    'custom.overview.a_product_launch_a': "A product launch, a portfolio, a festival, a fundraising campaign, these are moments where a standard site undersells what you're actually announcing. We build scroll-driven narratives, WebGL scenes, and custom cursor and interaction layers that make the site itself part of the pitch.",
+    'custom.overview.we_re_honest_about': 'We\'re honest about when this is overkill. If your goal is a clean, fast, conversion-focused business site, we\'ll say so and point you to the <a href="business-website.html" style="color:var(--accent);font-weight:700;">Business Website</a> package instead. This is for the projects where the experience is the product.',
+    'custom.overview.4_6_wks': '4&ndash;6 wks',
+    'custom.overview.60fps': '60fps',
+    'custom.overview.performance_target': 'Performance Target',
+    'custom.overview.gsap_webgl': 'GSAP + WebGL',
+    'custom.overview.native_no_plugins': 'Native, No Plugins',
+
+    'custom.includes.everything_that_goes_into': 'Everything That Goes Into the Experience',
+    'custom.includes.motion_with_a_purpose': 'Motion with a purpose, tuned until it feels effortless.',
+    'custom.includes.scroll_triggered_storytelling': 'Scroll-Triggered Storytelling',
+    'custom.includes.gsap_scrolltrigger_sequences_that': 'GSAP ScrollTrigger sequences that reveal content in step with how someone actually scrolls, not a fixed timer.',
+    'custom.includes.webgl_3d_elements': 'WebGL / 3D Elements',
+    'custom.includes.three_js_scenes_and': 'Three.js scenes and shader effects built and optimized specifically for the browser, not ported from a game engine.',
+    'custom.includes.custom_cursor_micro_interactions': 'Custom Cursor & Micro-interactions',
+    'custom.includes.small_interaction_details_hover': 'Small interaction details, hover states, cursor behavior, that most sites skip and most visitors notice.',
+    'custom.includes.sound_design_optional': 'Sound Design (Optional)',
+    'custom.includes.subtle_audio_cues_for': 'Subtle audio cues for interactions when the project calls for it, always with an obvious mute control.',
+    'custom.includes.performance_budgeting': 'Performance Budgeting',
+    'custom.includes.we_set_a_frame': 'We set a frame-rate and load-time budget before building, so the spectacle never comes at the cost of usability.',
+    'custom.includes.graceful_mobile_fallbacks': 'Graceful Mobile Fallbacks',
+    'custom.includes.heavy_webgl_scenes_get': 'Heavy WebGL scenes get a lighter, still-polished fallback on mobile so nobody hits a broken experience.',
+
+    'custom.infostrip.4_6_weeks': '4&ndash;6 Weeks',
+    'custom.infostrip.build_timeline': 'Build Timeline',
+    'custom.infostrip.to_your_build_team': 'To Your Build Team',
+
+    'custom.how.from_concept_to_live': 'From Concept to Live Experience',
+    'custom.how.we_prototype_the_feel': 'We prototype the feel before we commit to the build.',
+    'custom.how.concept_storyboard': 'Concept & Storyboard',
+    'custom.how.we_storyboard_the_scroll': 'We storyboard the scroll journey scene by scene, like a short film, before touching code, so everyone agrees on the arc first.',
+    'custom.how.prototype_the_motion': 'Prototype the Motion',
+    'custom.how.a_rough_functional_build': 'A rough, functional build of the key interactions early, so you feel the experience before the visual polish is added.',
+    'custom.how.build_optimize_launch': 'Build, Optimize & Launch',
+    'custom.how.full_visual_polish_performance': 'Full visual polish, performance tuning across devices, then launch with monitoring in place for the first week.',
+
+    'custom.faq.common_questions_about_interactive': 'Common Questions About Interactive Builds',
+    'custom.faq.will_this_slow_my': 'Will this slow my site down?',
+    'custom.faq.not_if_it_s': "Not if it's budgeted correctly, which is why performance budgeting is part of the process, not an afterthought. We set a target load time and frame rate before building and test against it constantly.",
+    'custom.faq.does_it_work_well': 'Does it work well on mobile?',
+    'custom.faq.yes_with_a_graceful': 'Yes, with a graceful fallback approach. Heavy 3D scenes get simplified or swapped for optimized alternatives on mobile so the experience stays smooth rather than choppy.',
+    'custom.faq.do_i_need_this': 'Do I need this, or would a standard site work?',
+    'custom.faq.depends_on_the_goal': "Depends on the goal. Product launches, festivals, portfolios, and campaigns benefit from it. Ongoing business sites usually don't need the full treatment, and we'll tell you that honestly in the discovery call.",
+    'custom.faq.can_content_be_updated': 'Can content be updated after launch if it changes often?',
+    'custom.faq.interactive_sequences_are_usually': "Interactive sequences are usually built for a specific narrative, so frequent content changes aren't the ideal fit. For sites needing regular updates, we typically pair this with a CMS-driven structure for the parts that change.",
+
+    'custom.cta.motion': 'MOTION',
+    'custom.cta.let_s_build_a': "Let's Build a Site People Actually Remember"
+  },
+  fr: {
+    'meta.title': 'Expérience Interactive Sur-Mesure — YFrame, Paris',
+    'meta.description': 'WebGL, narration au scroll et sites pensés en 3D. Comment YFrame crée des expériences interactives qui réagissent à chaque scroll et à chaque clic.',
+
+    'custom.hero.sites_that_respond_to': 'Des Sites Qui Réagissent à Chaque Scroll et à Chaque Clic',
+    'custom.hero.for_launches_portfolios_and': 'Pour les lancements, les portfolios et les marques qui veulent marquer un moment, pas seulement une page. WebGL, narration déclenchée au scroll et expériences 3D qui transforment un site web en quelque chose dont on se souvient vraiment.',
+
+    'custom.overview.not_every_site_needs': "Tous les Sites N'en Ont Pas Besoin. Certains, Absolument.",
+    'custom.overview.a_product_launch_a': "Un lancement de produit, un portfolio, un festival, une campagne de collecte de fonds&nbsp;: autant de moments où un site standard sous-vend ce que vous annoncez réellement. Nous créons des récits pilotés par le scroll, des scènes WebGL, ainsi que des curseurs et des couches d'interaction sur-mesure qui font du site lui-même une partie du pitch.",
+    'custom.overview.we_re_honest_about': 'Nous sommes honnêtes sur les cas où ce serait excessif. Si votre objectif est un site d\'entreprise propre, rapide et centré sur la conversion, nous vous le dirons et vous orienterons vers la formule <a href="business-website.html" style="color:var(--accent);font-weight:700;">Site Vitrine</a>. Celle-ci est destinée aux projets où l\'expérience est le produit.',
+    'custom.overview.4_6_wks': '4&ndash;6 sem.',
+    'custom.overview.60fps': '60&nbsp;fps',
+    'custom.overview.performance_target': 'Objectif de Performance',
+    'custom.overview.gsap_webgl': 'GSAP + WebGL',
+    'custom.overview.native_no_plugins': 'Natif, Sans Plugins',
+
+    'custom.includes.everything_that_goes_into': "Tout Ce Qui Compose l'Expérience",
+    'custom.includes.motion_with_a_purpose': "Un mouvement qui a du sens, réglé jusqu'à paraître naturel.",
+    'custom.includes.scroll_triggered_storytelling': 'Narration Déclenchée au Scroll',
+    'custom.includes.gsap_scrolltrigger_sequences_that': "Des séquences GSAP ScrollTrigger qui révèlent le contenu au rythme du scroll réel de l'utilisateur, pas d'un minuteur fixe.",
+    'custom.includes.webgl_3d_elements': 'Éléments WebGL / 3D',
+    'custom.includes.three_js_scenes_and': 'Des scènes Three.js et des effets shader conçus et optimisés spécifiquement pour le navigateur, sans portage depuis un moteur de jeu.',
+    'custom.includes.custom_cursor_micro_interactions': 'Curseur Sur-Mesure et Micro-interactions',
+    'custom.includes.small_interaction_details_hover': "Ces petits détails d'interaction, états au survol, comportement du curseur, que la plupart des sites négligent et que la plupart des visiteurs remarquent.",
+    'custom.includes.sound_design_optional': 'Sound Design (Optionnel)',
+    'custom.includes.subtle_audio_cues_for': 'Des repères sonores discrets pour les interactions quand le projet le demande, toujours avec un contrôle de coupure du son bien visible.',
+    'custom.includes.performance_budgeting': 'Budget de Performance',
+    'custom.includes.we_set_a_frame': "Nous fixons un budget de fréquence d'images et de temps de chargement avant de développer, pour que le spectacle ne se fasse jamais au détriment de l'usage.",
+    'custom.includes.graceful_mobile_fallbacks': 'Alternatives Mobiles Soignées',
+    'custom.includes.heavy_webgl_scenes_get': 'Les scènes WebGL lourdes reçoivent une version plus légère, mais toujours soignée, sur mobile, pour que personne ne tombe sur une expérience cassée.',
+
+    'custom.infostrip.4_6_weeks': '4&ndash;6 Semaines',
+    'custom.infostrip.build_timeline': 'Délai de Réalisation',
+    'custom.infostrip.to_your_build_team': 'À Votre Équipe Technique',
+
+    'custom.how.from_concept_to_live': "Du Concept à l'Expérience en Ligne",
+    'custom.how.we_prototype_the_feel': 'Nous prototypons le ressenti avant de nous engager dans le développement.',
+    'custom.how.concept_storyboard': 'Concept et Storyboard',
+    'custom.how.we_storyboard_the_scroll': "Nous réalisons le storyboard du parcours de scroll scène par scène, comme un court métrage, avant de toucher au code, pour que tout le monde soit d'accord sur l'arc narratif d'abord.",
+    'custom.how.prototype_the_motion': 'Prototyper le Mouvement',
+    'custom.how.a_rough_functional_build': "Une version brute mais fonctionnelle des interactions clés, tôt dans le projet, pour que vous ressentiez l'expérience avant l'ajout du polish visuel.",
+    'custom.how.build_optimize_launch': 'Développer, Optimiser et Lancer',
+    'custom.how.full_visual_polish_performance': 'Polish visuel complet, optimisation des performances sur tous les appareils, puis lancement avec un suivi en place pendant la première semaine.',
+
+    'custom.faq.common_questions_about_interactive': 'Questions Fréquentes sur les Expériences Interactives',
+    'custom.faq.will_this_slow_my': 'Cela va-t-il ralentir mon site&nbsp;?',
+    'custom.faq.not_if_it_s': "Pas si le budget est bien tenu, c'est pourquoi le budget de performance fait partie du processus, pas d'une réflexion après coup. Nous fixons un temps de chargement et une fréquence d'images cibles avant de développer, et nous testons en permanence par rapport à eux.",
+    'custom.faq.does_it_work_well': 'Est-ce que cela fonctionne bien sur mobile&nbsp;?',
+    'custom.faq.yes_with_a_graceful': "Oui, avec une approche d'alternative soignée. Les scènes 3D lourdes sont simplifiées ou remplacées par des équivalents optimisés sur mobile, pour que l'expérience reste fluide plutôt que saccadée.",
+    'custom.faq.do_i_need_this': 'En ai-je besoin, ou un site standard suffirait-il&nbsp;?',
+    'custom.faq.depends_on_the_goal': "Cela dépend de l'objectif. Les lancements de produits, festivals, portfolios et campagnes en profitent. Les sites d'entreprise au quotidien n'ont généralement pas besoin du traitement complet, et nous vous le dirons honnêtement lors de l'appel de découverte.",
+    'custom.faq.can_content_be_updated': "Le contenu peut-il être mis à jour après le lancement s'il change souvent&nbsp;?",
+    'custom.faq.interactive_sequences_are_usually': "Les séquences interactives sont généralement conçues pour un récit précis, donc des changements de contenu fréquents ne sont pas l'idéal. Pour les sites qui demandent des mises à jour régulières, nous associons généralement cette approche à une structure pilotée par un CMS pour les parties qui changent.",
+
+    'custom.cta.motion': 'MOUVEMENT',
+    'custom.cta.let_s_build_a': 'Construisons un Site Dont les Gens Se Souviennent Vraiment'
+  }
+});

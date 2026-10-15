@@ -3,6 +3,44 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 gsap.registerPlugin(ScrollTrigger);
 
+/* ---------- language support ----------
+   Static copy is translated by the shared engine (assets/i18n.js) through
+   data-i18n attributes. Text this file draws itself goes through tr(), and is
+   re-rendered on the engine's 'yframe:langchange' event. English literals are
+   the fallback if the engine is missing. */
+const tr = (key, fallback) => (window.yframeI18n ? window.yframeI18n.t(key) : fallback);
+const currentLang = () => (window.yframeI18n ? window.yframeI18n.getLang() : 'en');
+
+const TOD_FALLBACK = { dawn: 'Dawn', noon: 'Noon', dusk: 'Dusk' };
+let todPhase = 'noon';
+function renderTodReadout(){
+  const readout = document.getElementById('tod-readout');
+  if (readout) readout.textContent = tr('aurelia.structure.' + todPhase, TOD_FALLBACK[todPhase]);
+}
+
+/* labels drawn into the floor-plan SVG by buildBlueprint() */
+const bpTexts = [];
+function renderBpText({ el, key, fallback, vars }){
+  let s = tr(key, fallback);
+  Object.keys(vars || {}).forEach(name => {
+    const v = vars[name];
+    const text = typeof v === 'number'
+      ? v.toLocaleString(currentLang(), { minimumFractionDigits: 1, maximumFractionDigits: 1 })
+      : v;
+    s = s.replace('{' + name + '}', text);
+  });
+  el.textContent = s;
+}
+function bpText(el, key, fallback, vars){
+  const entry = { el, key, fallback, vars };
+  bpTexts.push(entry);
+  renderBpText(entry);
+}
+document.addEventListener('yframe:langchange', () => {
+  renderTodReadout();
+  bpTexts.forEach(renderBpText);
+});
+
 /* ---------- shared footprint (used by 3D model + floor plan) ----------
    NEXUS PAVILION — three tapered wings radiating at 120deg from a circular
    central courtyard/atrium (a "pinwheel" plan). Built from 9 points: for
@@ -371,8 +409,8 @@ function initStructureScene(){
     sun.intensity = 0.7 + Math.sin(t * Math.PI) * 0.7;
     hemi.intensity = 0.35 + Math.sin(t * Math.PI) * 0.3;
 
-    const readout = document.getElementById('tod-readout');
-    readout.textContent = t < 0.33 ? 'Dawn' : t < 0.66 ? 'Noon' : 'Dusk';
+    todPhase = t < 0.33 ? 'dawn' : t < 0.66 ? 'noon' : 'dusk';
+    renderTodReadout();
   }
   updateTimeOfDay(0.5);
 
@@ -501,7 +539,11 @@ function buildBlueprint(){
   rooms.appendChild(pool);
 
   /* per-wing labels at the wing midpoint */
-  const wingNames = ['LIVING WING', 'STUDIO WING', 'REST WING'];
+  const wingLabels = [
+    ['aurelia.js.living_wing', 'LIVING WING'],
+    ['aurelia.js.studio_wing', 'STUDIO WING'],
+    ['aurelia.js.rest_wing', 'REST WING']
+  ];
   WING_CENTERS_DEG.forEach((deg, i) => {
     const rad = deg * Math.PI / 180;
     const midR = (R_IN + R_OUT) / 2;
@@ -510,14 +552,14 @@ function buildBlueprint(){
     t.setAttribute('x', lx); t.setAttribute('y', ly);
     t.setAttribute('text-anchor', 'middle');
     t.setAttribute('letter-spacing', '1.2');
-    t.textContent = wingNames[i];
+    bpText(t, wingLabels[i][0], wingLabels[i][1]);
     labels.appendChild(t);
   });
   const poolLabel = document.createElementNS(svgNS, 'text');
   poolLabel.setAttribute('x', ccx); poolLabel.setAttribute('y', ccy + 4);
   poolLabel.setAttribute('text-anchor', 'middle');
   poolLabel.setAttribute('font-size', '9');
-  poolLabel.textContent = 'COURTYARD';
+  bpText(poolLabel, 'aurelia.js.courtyard_label', 'COURTYARD');
   labels.appendChild(poolLabel);
 
   /* overall span dimension line, above the plan */
@@ -530,7 +572,7 @@ function buildBlueprint(){
   dimText.setAttribute('x', (x1 + x2) / 2); dimText.setAttribute('y', dimY - 10);
   dimText.setAttribute('text-anchor', 'middle');
   dimText.setAttribute('stroke', 'none');
-  dimText.textContent = `${(BP_MAX_X - BP_MIN_X).toFixed(1)} m span`;
+  bpText(dimText, 'aurelia.js.span', '{n} m span', { n: BP_MAX_X - BP_MIN_X });
   dims.appendChild(dimText);
 
   /* north arrow + scale note, fixed in the corner */
@@ -547,7 +589,7 @@ function buildBlueprint(){
   scaleNote.setAttribute('text-anchor', 'middle');
   scaleNote.setAttribute('stroke', 'none');
   scaleNote.setAttribute('font-size', '10');
-  scaleNote.textContent = 'SCALE 1:200';
+  bpText(scaleNote, 'aurelia.js.scale', 'SCALE 1:200');
   dims.appendChild(scaleNote);
 }
 

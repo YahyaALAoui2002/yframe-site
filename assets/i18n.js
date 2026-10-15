@@ -107,7 +107,9 @@
       'footer.privacy': 'Privacy',
       'footer.bottom': '© 2026 YFrame. All rights reserved. · Paris, France',
 
-      'callFab.tooltip': 'Call Now'
+      'callFab.tooltip': 'Call Now',
+
+      'lang.switcher': 'Language switcher'
     },
     fr: {
       'meta.title': 'YFrame — Agence de Web Design Futuriste, Paris',
@@ -216,14 +218,31 @@
       'footer.privacy': 'Confidentialité',
       'footer.bottom': '© 2026 YFrame. Tous droits réservés. · Paris, France',
 
-      'callFab.tooltip': 'Appeler'
+      'callFab.tooltip': 'Appeler',
+
+      'lang.switcher': 'Changer de langue'
     }
   };
 
   var SUPPORTED = ['en', 'fr'];
   var STORAGE_KEY = 'yframe-lang';
 
+  // Per-page dictionaries (assets/i18n/*.js) register themselves on this array
+  // before this script runs; they add to, and override, the strings above.
+  (window.YFRAME_I18N_PAGES || []).forEach(function (page) {
+    SUPPORTED.forEach(function (lang) {
+      var strings = page[lang];
+      if (!strings) return;
+      Object.keys(strings).forEach(function (key) { translations[lang][key] = strings[key]; });
+    });
+  });
+
   function detectInitialLang() {
+    // ?lang=fr lets a link force a language; it then sticks like a manual choice
+    try {
+      var requested = (new URLSearchParams(window.location.search).get('lang') || '').toLowerCase();
+      if (SUPPORTED.indexOf(requested) !== -1) return requested;
+    } catch (e) {}
     try {
       var stored = localStorage.getItem(STORAGE_KEY);
       if (stored && SUPPORTED.indexOf(stored) !== -1) return stored;
@@ -234,39 +253,54 @@
 
   var currentLang = detectInitialLang();
 
-  function t(key) {
-    var dict = translations[currentLang] || translations.en;
-    return (dict && dict[key] !== undefined) ? dict[key] : (translations.en[key] !== undefined ? translations.en[key] : key);
+  // Current language, then English; undefined if the key exists nowhere
+  function lookup(key) {
+    var dict = translations[currentLang];
+    if (dict && dict[key] !== undefined) return dict[key];
+    return translations.en[key];
   }
+
+  function t(key) {
+    var value = lookup(key);
+    return value !== undefined ? value : key;
+  }
+
+  var ATTRIBUTES = ['placeholder', 'alt', 'title', 'aria-label'];
 
   function applyLanguage(lang) {
     if (SUPPORTED.indexOf(lang) === -1) lang = 'en';
     currentLang = lang;
     document.documentElement.lang = lang;
 
+    // An unknown key leaves the markup as authored instead of printing the key
     document.querySelectorAll('[data-i18n]').forEach(function (el) {
-      var key = el.getAttribute('data-i18n');
-      var value = t(key);
+      var value = lookup(el.getAttribute('data-i18n'));
       if (value !== undefined) el.innerHTML = value;
     });
 
-    document.querySelectorAll('[data-i18n-placeholder]').forEach(function (el) {
-      var key = el.getAttribute('data-i18n-placeholder');
-      var value = t(key);
-      if (value !== undefined) el.setAttribute('placeholder', value);
+    ATTRIBUTES.forEach(function (attr) {
+      document.querySelectorAll('[data-i18n-' + attr + ']').forEach(function (el) {
+        var value = lookup(el.getAttribute('data-i18n-' + attr));
+        if (value !== undefined) el.setAttribute(attr, value);
+      });
     });
 
-    var titleKey = 'meta.title';
-    var descKey = 'meta.description';
-    if (translations[lang][titleKey]) document.title = translations[lang][titleKey];
+    var title = lookup('meta.title');
+    if (title) document.title = title;
     var metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc && translations[lang][descKey]) metaDesc.setAttribute('content', translations[lang][descKey]);
+    var description = lookup('meta.description');
+    if (metaDesc && description) metaDesc.setAttribute('content', description);
 
     document.querySelectorAll('.lang-btn').forEach(function (btn) {
-      btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+      var active = btn.getAttribute('data-lang') === lang;
+      btn.classList.toggle('active', active);
+      btn.setAttribute('aria-pressed', active ? 'true' : 'false');
     });
 
     try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
+
+    // Lets page scripts re-render text they generate themselves
+    document.dispatchEvent(new CustomEvent('yframe:langchange', { detail: { lang: lang } }));
   }
 
   document.querySelectorAll('.lang-btn').forEach(function (btn) {

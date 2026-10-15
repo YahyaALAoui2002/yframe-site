@@ -1,0 +1,105 @@
+/* YFrame i18n: services/landing-page.html (EN + FR). */
+(window.YFRAME_I18N_PAGES = window.YFRAME_I18N_PAGES || []).push({
+  en: {
+    'meta.title': 'Landing Page — YFrame, Paris',
+    'meta.description': "A single custom-designed, hand-coded landing page, live in about two weeks. How YFrame builds fast, focused pages that don't look rushed.",
+
+    'landing.hero.one_page_one_goal': 'One Page. One Goal. Live in Two Weeks.',
+    'landing.hero.for_launches_campaigns_or': 'For launches, campaigns, or a lean first site: a single custom-designed, hand-coded page built around one clear action, from brief to live in about two weeks.',
+
+    'landing.overview.when_one_page_is': 'When One Page Is Exactly Enough',
+    'landing.overview.not_every_business_needs': 'Not every business needs six pages on day one. A landing page gives you one clear message, one call to action, and a real, custom-built site live fast, no template, no compromise on the parts that actually matter: the headline, the offer, and the path to contact you.',
+    'landing.overview.it_s_the_right': 'It\'s the right starting point for a product launch, an event, a single campaign, or a first version before a full site makes sense. If your business genuinely needs more structure, we\'ll say so, that\'s the <a href="business-website.html" style="color:var(--accent);font-weight:700;">Business Website</a> package instead.',
+    'landing.overview.2_weeks': '2 Weeks',
+    'landing.overview.1_page': '1 Page',
+    'landing.overview.fully_custom_zero_templates': 'Fully Custom, Zero Templates',
+    'landing.overview.100': '100%',
+    'landing.overview.hand_coded_no_builders': 'Hand-Coded, No Builders',
+
+    'landing.includes.everything_that_goes_into': 'Everything That Goes Into the Page',
+    'landing.includes.one_page_built_properly': 'One page, built properly, not a stripped-down version of a bigger project.',
+    'landing.includes.copy_structure_direction': 'Copy & Structure Direction',
+    'landing.includes.we_help_sharpen_your': 'We help sharpen your message into a clear headline, offer, and call to action before any pixel gets placed.',
+    'landing.includes.custom_design_all_states': 'Custom Design, All States',
+    'landing.includes.every_section_hover_state': 'Every section, hover state, and mobile breakpoint designed to final pixel in Figma.',
+    'landing.includes.no_page_builders_hand': 'No page builders. Hand-written HTML, CSS, and JS, fast to load and easy to hand off.',
+    'landing.includes.scroll_reveals_and_hover': 'Scroll reveals and hover details that make the page feel considered, not static.',
+    'landing.includes.mobile_first_responsive': 'Mobile-First Responsive',
+    'landing.includes.designed_and_tested_on': "Designed and tested on phone screens first, since that's where most visitors land.",
+    'landing.includes.launch_dns_setup': 'Launch & DNS Setup',
+    'landing.includes.domain_connection_hosting_and': 'Domain connection, hosting, and a live check before we call it done.',
+
+    'landing.how.from_brief_to_live': 'From Brief to Live in Two Weeks',
+    'landing.how.short_focused_and_built': 'Short, focused, and built to move fast without cutting corners.',
+    'landing.how.brief_goal': 'Brief & Goal',
+    'landing.how.a_short_call_to': "A short call to nail down the one thing this page needs to do, and who it's talking to. Usually day one.",
+    'landing.how.design_build': 'Design & Build',
+    'landing.how.design_and_development_run': 'Design and development run together on a single page rather than as two separate phases, which is how it ships this fast.',
+    'landing.how.review_launch': 'Review & Launch',
+    'landing.how.one_round_of_review': 'One round of review, final polish, then live with your domain connected.',
+
+    'landing.faq.common_questions_about_landing': 'Common Questions About Landing Pages',
+    'landing.faq.is_one_page_really': 'Is one page really enough for my business?',
+    'landing.faq.for_a_launch_a': 'For a launch, a campaign, or a focused offer, yes. If you\'re running multiple services or need a full site structure, the <a href="business-website.html" style="color:var(--accent);font-weight:700;">Business Website</a> package is the better fit, and we\'ll tell you honestly which one you actually need.',
+    'landing.faq.can_i_add_more': 'Can I add more pages later?',
+    'landing.faq.yes_landing_pages_are': 'Yes. Landing pages are built to extend. Additional pages are quoted individually once you know what you need next.',
+    'landing.faq.do_you_write_the': 'Do you write the copy?',
+    'landing.faq.we_sharpen_and_structure': 'We sharpen and structure what you give us. Full copywriting from scratch is available as an add-on if you need it.',
+    'landing.faq.what_s_not_included': "What's not included at this price?",
+    'landing.faq.custom_illustration_video_producti': "Custom illustration, video production, and e-commerce functionality aren't included. Those get quoted separately if your page needs them.",
+
+    'landing.cta.launch': 'LAUNCH',
+    'landing.cta.let_s_get_your': "Let's Get Your Page Live in Two Weeks"
+  },
+  fr: {
+    'meta.title': "Page d'Atterrissage — YFrame, Paris",
+    'meta.description': "Une page d'atterrissage unique, conçue sur-mesure et codée à la main, en ligne en deux semaines environ. Comment YFrame crée des pages rapides et ciblées qui n'ont pas l'air bâclées.",
+
+    'landing.hero.one_page_one_goal': 'Une Page. Un Objectif. En Ligne en Deux Semaines.',
+    'landing.hero.for_launches_campaigns_or': "Pour un lancement, une campagne ou un premier site allégé&nbsp;: une page unique, conçue sur-mesure et codée à la main autour d'une action claire, du brief à la mise en ligne en deux semaines environ.",
+
+    'landing.overview.when_one_page_is': "Quand Une Seule Page Est Exactement Ce Qu'il Vous Faut",
+    'landing.overview.not_every_business_needs': "Toutes les entreprises n'ont pas besoin de six pages dès le premier jour. Une page d'atterrissage vous offre un message clair, un appel à l'action unique et un vrai site sur-mesure en ligne rapidement, sans template, sans compromis sur ce qui compte vraiment&nbsp;: le titre, l'offre et le chemin pour vous contacter.",
+    'landing.overview.it_s_the_right': 'C\'est le bon point de départ pour un lancement de produit, un événement, une campagne unique ou une première version avant qu\'un site complet ait du sens. Si votre activité a réellement besoin de plus de structure, nous vous le dirons, ce sera alors la formule <a href="business-website.html" style="color:var(--accent);font-weight:700;">Site Vitrine</a>.',
+    'landing.overview.2_weeks': '2 Semaines',
+    'landing.overview.1_page': '1 Page',
+    'landing.overview.fully_custom_zero_templates': 'Entièrement Sur-Mesure, Zéro Template',
+    'landing.overview.100': '100&nbsp;%',
+    'landing.overview.hand_coded_no_builders': 'Codé à la Main, Sans Page Builder',
+
+    'landing.includes.everything_that_goes_into': 'Tout Ce Qui Compose la Page',
+    'landing.includes.one_page_built_properly': "Une seule page, construite dans les règles de l'art, pas une version au rabais d'un projet plus grand.",
+    'landing.includes.copy_structure_direction': 'Accompagnement Rédaction et Structure',
+    'landing.includes.we_help_sharpen_your': "Nous vous aidons à affiner votre message en un titre, une offre et un appel à l'action clairs, avant de placer le moindre pixel.",
+    'landing.includes.custom_design_all_states': 'Design Sur-Mesure, Tous les États',
+    'landing.includes.every_section_hover_state': 'Chaque section, chaque état au survol et chaque point de rupture mobile, dessinés au pixel près dans Figma.',
+    'landing.includes.no_page_builders_hand': 'Aucun page builder. Du HTML, du CSS et du JS écrits à la main, rapides à charger et faciles à transmettre.',
+    'landing.includes.scroll_reveals_and_hover': 'Des apparitions au scroll et des détails au survol qui donnent à la page un côté soigné, pas figé.',
+    'landing.includes.mobile_first_responsive': 'Responsive Mobile-First',
+    'landing.includes.designed_and_tested_on': "Conçue et testée d'abord sur smartphone, puisque c'est là que la plupart des visiteurs arrivent.",
+    'landing.includes.launch_dns_setup': 'Mise en Ligne et Configuration DNS',
+    'landing.includes.domain_connection_hosting_and': 'Connexion du nom de domaine, hébergement et vérification en conditions réelles avant de déclarer le travail terminé.',
+
+    'landing.how.from_brief_to_live': 'Du Brief à la Mise en Ligne en Deux Semaines',
+    'landing.how.short_focused_and_built': 'Court, ciblé et conçu pour avancer vite sans rogner sur la qualité.',
+    'landing.how.brief_goal': 'Brief et Objectif',
+    'landing.how.a_short_call_to': "Un court appel pour définir précisément la seule chose que cette page doit accomplir, et à qui elle s'adresse. En général dès le premier jour.",
+    'landing.how.design_build': 'Design et Développement',
+    'landing.how.design_and_development_run': "Le design et le développement avancent ensemble sur une seule page, plutôt qu'en deux phases séparées&nbsp;: c'est ce qui permet de livrer aussi vite.",
+    'landing.how.review_launch': 'Relecture et Lancement',
+    'landing.how.one_round_of_review': 'Un tour de relecture, les dernières finitions, puis la mise en ligne avec votre nom de domaine connecté.',
+
+    'landing.faq.common_questions_about_landing': "Questions Fréquentes sur les Pages d'Atterrissage",
+    'landing.faq.is_one_page_really': 'Une seule page suffit-elle vraiment pour mon activité&nbsp;?',
+    'landing.faq.for_a_launch_a': 'Pour un lancement, une campagne ou une offre ciblée, oui. Si vous proposez plusieurs services ou avez besoin d\'une structure de site complète, la formule <a href="business-website.html" style="color:var(--accent);font-weight:700;">Site Vitrine</a> est mieux adaptée, et nous vous dirons honnêtement laquelle vous convient vraiment.',
+    'landing.faq.can_i_add_more': "Puis-je ajouter d'autres pages plus tard&nbsp;?",
+    'landing.faq.yes_landing_pages_are': "Oui. Les pages d'atterrissage sont conçues pour évoluer. Les pages supplémentaires sont chiffrées une par une dès que vous savez ce dont vous avez besoin ensuite.",
+    'landing.faq.do_you_write_the': 'Rédigez-vous les textes&nbsp;?',
+    'landing.faq.we_sharpen_and_structure': 'Nous affinons et structurons ce que vous nous fournissez. La rédaction complète à partir de zéro est disponible en option si vous en avez besoin.',
+    'landing.faq.what_s_not_included': "Qu'est-ce qui n'est pas inclus à ce prix&nbsp;?",
+    'landing.faq.custom_illustration_video_producti': "L'illustration sur-mesure, la production vidéo et les fonctionnalités e-commerce ne sont pas incluses. Elles sont chiffrées séparément si votre page en a besoin.",
+
+    'landing.cta.launch': 'LANCEMENT',
+    'landing.cta.let_s_get_your': 'Mettons Votre Page en Ligne en Deux Semaines'
+  }
+});
